@@ -1,0 +1,34 @@
+baseurl = "https://mmellet.github.io/ELD718"
+#relativeURLs = true
+title = "ELD718"
+theme = "book"
+
+
+[params]
+  BookMenuBundle = "/menu"
+  BookTheme = "light"
+
+
+[outputFormats]
+  [outputFormats.print]
+    mediaType = "text/html" # normal
+    rel = "print" # rapport
+    baseName = "print" # /print dans l'URL
+
+[permalinks]
+  pages = "/:filename"
+  docs = "/seances/:title"
+
+[markup]
+  [markup.goldmark]
+    typographer = true
+    [markup.goldmark.renderer]
+     footnoteReturnLinkContents = "&uarr;"
+      unsafe = true
+
+copyright = "2024 Margot Mellet CC BY-NC-SA"
+languageCode = "en-us"
+
+[author]
+	name = "Margot Mellet"
+	email = "margot.mellet@usherbrooke.ca"

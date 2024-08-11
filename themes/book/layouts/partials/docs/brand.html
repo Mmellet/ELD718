@@ -1,0 +1,8 @@
+<h2 class="book-brand">
+  <a href="{{ cond (not .Site.Home.File) .Sites.First.Home.RelPermalink .Site.Home.RelPermalink }}">
+    {{- with .Site.Params.BookLogo -}}
+    <img src="{{ . | relURL }}" alt="Logo" />
+    {{- end -}}
+    <span style="color: rgb(38, 156, 77);font-size: 18px;">{{ .Site.Title }}</span>
+  </a>
+</h2>
