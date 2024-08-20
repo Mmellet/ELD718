@@ -29,35 +29,34 @@ title: Lectures
 
 - <a href="https://via.hypothes.is/http://www.parcoursnumeriques-pum.ca/1-pratiques/chapitre1.html" target="blank">La fonction éditoriale et ses défis (Poirier & Genêt 2014)</a>
 
-<!--
+
 
 ----
 ### Séance 6 
 *annotation en mode public*
 
-https://www.digitalstudies.org/article/id/9655/
-ou 
-https://popjournal.ca/issue05/fauchie
+- <a href="https://via.hypothes.is/https://www.digitalstudies.org/article/id/9655/">The Importance of Single Source Publishing in Scientific Publishing (Fauchié 2023)</a>
 
 ----
 ### Séance 7 
 
-- <a href="http://parcoursnumeriques-pum.ca/12-editionscritiques/chapitre3.html">Éditions critiques imprimées et numériques (Alessi 2023)</a>
+- <a href="https://via.hypothes.is/http://parcoursnumeriques-pum.ca/12-editionscritiques/chapitre3.html">Éditions critiques imprimées et numériques (Alessi 2023)</a>
 
 ----
 
 ### Séance 8
 
-- ?
+- Pas d'annotation
 
 ----
 ### Séance 9
-? article moi et mathilde
+
+- <a href="https://via.hypothes.is/https://journals.openedition.org/revuehn/371">Pour une théorie de l’éditorialisation (Vitali-Rosati 2020)</a>
 
 ----
 ### Séance 10
 
-- 
+- <a href="https://via.hypothes.is/https://www.cairn.info/revue-de-la-bibliotheque-nationale-de-france-2012-3-page-13.htm">Du récit hypertextuel au récit interactif (Bouchardon 2012)</a>
 
 ----
 ### Séance 11
@@ -72,13 +71,9 @@ https://popjournal.ca/issue05/fauchie
 ----
 ### Séance 13
 
-- 
+- <a href="https://via.hypothes.is/https://www.erudit.org/fr/revues/analyses/2022-v16-n1-analyses06955/1088499ar/">Généalogie du zine contemporain au Québec : de la personnalisation de la politique à une politique de la mise en commun des intimités (Legendre 2022)</a>
 
 ----
 ### Séance 14
 
-- http://www.digitalhumanities.org/dhq/vol/16/2/000646/000646.html
-
-
-
--->
+- pas d'annotation

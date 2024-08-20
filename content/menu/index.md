@@ -2,6 +2,7 @@
 headless: true
 ---
 
+- **[Séances]({{< relref "/seances" >}})**
 - **[Lectures]({{< relref "/lectures" >}})**
 - **[Modalités]({{< relref "/modalites" >}})**
 - **[Ressources]({{< relref "/documentation" >}})**

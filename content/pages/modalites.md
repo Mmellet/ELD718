@@ -3,26 +3,15 @@ title: Modalités d'évaluation
 ---
 
 ## Modalités d'évaluation
-
+*à venir*
 
 ### Examen de mi-session 
-
 *présentation lors de la séance 5*
 
-<iframe src="https://mmellet.github.io/ELD718/slides/Examen-mi.html" title="description" height="500" width="800" ></iframe>
-
-<div style="text-align:center">
-<a href="https://mmellet.github.io/ELD718/slides/Examen-mi.html" target="_blank">ouvrir dans mon navigateur</a>
-</div>
 
 ### Travail final 
+*présentation lors de la séance 9*
 
-*présentation lors de la séance 10*
 
-<iframe src="https://mmellet.github.io/ELD718/slides/Examen-final.html" title="description" height="500" width="800" ></iframe>
-
-<div style="text-align:center">
-<a href="https://mmellet.github.io/ELD718/slides/Examen-final.html" target="_blank">ouvrir dans mon navigateur</a>
-</div>
 
 
