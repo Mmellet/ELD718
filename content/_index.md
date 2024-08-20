@@ -11,6 +11,6 @@ Cet espace rassemble les différents éléments du cours :
 - les [lectures hebdomadaires](lectures)
 - les [modalités d'évaluation](modalites)
 - les [ressources documentaires](documentation)
-- les [références bibliographiques](https://www.zotero.org/groups/) utilisées pour le cours
+- les [références bibliographiques](https://www.zotero.org/groups/5435201/eld-/library) utilisées pour le cours
 - mes [contacts](contact)
 
