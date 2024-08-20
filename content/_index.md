@@ -1,7 +1,7 @@
 
-Bienvenue sur le site du cours **ELD718|Édition numérique**. 
+Bienvenue sur le site du cours **ELD718|Édition numérique** de l'Université de Sherbrooke.
 
-Le cours se déroule officiellement le jeudi de 18h30 à 21h20 du 29 août au 5 décembre. 
+Le cours se déroule officiellement le jeudi de 18h30 à 21h20 du 29 août au 5 décembre au Campus de Longueuil. 
 
 Le plan du cours est disponible [ici](./doc/ELD718.pdf).
 
