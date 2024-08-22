@@ -4,7 +4,7 @@ title: Lectures
 
 ## Lectures & annotations hebdomadaires
 
-[Bibliographie Zotero pour Lectures & annotations](https://www.zotero.org/groups/5435201/eld-/library)
+[Bibliographie Zotero pour Lectures & annotations](https://www.zotero.org/groups/5435201/eld-/collections/ZH2XCK8A)
 
 ----
 
@@ -46,7 +46,7 @@ title: Lectures
 
 ### Séance 8
 
-- Pas d'annotation
+- pas d'annotation
 
 ----
 ### Séance 9
