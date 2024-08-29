@@ -33,8 +33,6 @@ Cette page référence les documentations utiles au cours sur l'usage des outils
 - CTRL/Cmd + S : Sauvegarder (*Save*)
 - CTRL/Cmd + O : Ouvrir (*Open*)
 - CTRL/Cmd + Q : Quitter (*Quit*)
-
-- CTRL/Cmd + F : Mettre en plein écran (*Full screen*)
 - CTRL/Cmd + N : Nouvelle fenêtre (*New*)
 #### Traitement texte 
 - CTRL/Cmd + B : Mise en gras (*Bold*)

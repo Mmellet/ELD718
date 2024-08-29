@@ -61,7 +61,7 @@ title: Lectures
 ----
 ### Séance 11
 
-- <a href="https://via.hypothes.is/https://eliterature.org/pad/elp.html">Electronic Literature What it is? (Hayles 2007)</a>
+- <a href="https://www.erudit.org/fr/revues/memoires/2021-v12-n2-memoires06997/1089037ar/">De la travailleuse de l’ombre à la femme d’exception : réflexion sur la présence des femmes dans l’histoire du livre au Québec (Vincent 2022)</a>
 
 ----
 ### Séance 12
