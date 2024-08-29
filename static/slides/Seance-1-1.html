@@ -1,0 +1,1039 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD718 - Édition numérique - A2024</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+		#fondop2 {
+			background-color: white;
+			border: 2px solid transparent;
+			opacity: 0.89;
+			width: 115%;
+			margin-left: -70px;
+
+			border-color: rgba(235, 202, 221, 0.432);
+		}
+
+		#fondop {
+
+			background-color: white;
+			border: 5px solid transparent;
+			opacity: 0.9;
+			border-color: rgba(235, 234, 202, 0.432);
+
+
+		}
+
+		#fondop3 {
+			font-family: OutputSans;
+			background-color: rgba(255, 255, 255, 0.466);
+			border: 2px solid transparent;
+			border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+			opacity: 0.93;
+		}
+
+		#fondop5 {
+			background-color: rgba(255, 255, 255, 0.151);
+			height: 600px;
+			width: 160%;
+			display: inline;
+			position: static;
+
+		}
+
+    .reveal a:hover {
+
+background-color: rgba(255, 255, 255, 0.349);
+}
+
+.reveal a {
+color: rgb(39, 111, 114);
+font-weight: 50;
+}
+
+.reveal h1,
+		.reveal h2,
+		.reveal h3,
+		.reveal h4,
+		.reveal h5,
+		.reveal h6 {
+			color: rgb(40,55,71);
+			font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 35px;
+			line-height: 1.5;
+			letter-spacing: normal;
+			text-transform: uppercase;
+			text-shadow: none;
+			word-wrap: break-word;
+		}
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+  </style>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD718 - Automne 2024 - Margot Mellet</div>
+      <section data-background-image="media/chute.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD718 | Édition numérique</h2>
+          <h3>29 août : Cours d'introduction</h3>
+        </div>
+
+
+
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="1800px">
+        <div id="fondop2">
+          <h6>Tour de classe</h6>
+          <ul class="icone-liste">
+            <li>
+              <i class="material-icons">person</i> Nom, formation</li>
+            <li> <i class="material-icons">computer</i> OS Machine</li>
+            <li> <i class="material-icons">pending</i> Attentes</li>
+            <li> <i class="material-icons">edit_note</i> Dernière édition numérique</li>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Problématiques et définitions</h3>
+          </div>
+        </section>
+
+        <section data-background-image="media/chute.png" data-background-size="1200px">
+          <div id="fondop2">
+            <p>Édition numérique, ensemble de pratiques, théories, technologies</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/chute.png" data-background-size="1200px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Quels sont les éléments de rupture et de continuité </br>dans l'édition numérique ?</p>
+          </div>
+        </section>
+        <section data-background-image="media/hyper.webp" data-background-size="1600px">
+          <div id="fondop2">
+
+            <b>Édition</b> : structuration d'une information <span class="fragment">en vue de sa publication</span>
+
+
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="1600px">
+          <div id="fondop2">
+
+            <b>Numérique</b> : <span>environnement et système d'écritures</span>
+            </br> <span class="fragment">qui est la représentation discrète de données au moyen de nombre</span>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="1600px">
+          <div id="fondop2">
+
+            <b>Édition Numérique</b> : structuration d'une information en vue de sa publication dans un environnement et un système d'écritures
+            </br> qui est la représentation discrète de données au moyen de nombre
+
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="1600px">
+          <div id="fondop2">
+<h6>Deux horizons</h6>
+<ul>
+  <li>Général : qu'est-ce que l'édition numérique ?</li>
+  <li>Particulier : qu'est-ce que peut être un livre numérique ?</li>
+  </ul>
+          </div>
+        </section>
+       
+
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Fonctionnement et objectifs</h3>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/chute.png" data-background-size="1200px">
+          <div id="fondop2">
+            <h6>Structure des séances</h6>
+            <ul>
+              <li> <i class="material-icons">find_in_page</i> Présentation et analyse : concepts, outils, projets</li>
+              <li> <i class="material-icons">groups</i>  Discussion et annotation</li>
+              <li> <i class="material-icons">design_services</i>  Pratique et exercices</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/rouage.png" data-background-size="2200px" data-background-color="#f1eded">
+          <div id="fondop2">
+            <h6>Un panorama d'outils</h6>
+
+            <ul>
+              <li> <i class="material-icons">format_indent_increase</i> Logiciel de publication assistée par ordinateur</li>
+              <li> <i class="material-icons">border_color</i>  Éditeur de texte, Éditeur XML et RDF</li>
+              <li> <i class="material-icons">collections_bookmark</i> Logiciel de gestion de références bibliographiques</li>
+              <li> <i class="material-icons">rebase_edit</i>   Protocole et service de gestion des versions</li>
+            </ul>
+          </div>
+
+        </section>
+
+        <section data-background-image="media/chute.png" data-background-size="1200px">
+          <div id="fondop2">
+            <h6>Axes</h6>
+            <ul>
+              <li style="margin-left: -80%;">Production des contenus</li>
+              <li>Circulation des contenus</li>
+              <li style="margin-left: 70%;"><nobr>Légitimation des contenus</nobr></li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="1600px" data-transition="linear"
+          data-transition-speed="fast">
+
+          <div id="fondop2">
+            <h6>Objectifs</h6>
+            <ul>
+              <li>
+                <i class="material-icons">settings</i>  <b>comprendre</b> les structures et modèles de l’édition numérique
+              </li>
+              <li>
+                <i class="material-icons">visibility</i> <b>identifier et reconnaître </b> les différentes formes éditoriales du livre numérique :
+                connaître les enjeux culturels de la chaîne du livre
+              </li>
+              <li>
+                <i class="material-icons">contrast</i> <b>développer</b> une réflexion critique sur les modèles éditoriaux du livre numérique :
+                aborder les problématiques, comprendre les implications en terme de modélisation
+                et d’implémentation technique</li>
+              <li>
+                <i class="material-icons">code</i>  <b>conceptualiser</b> un modèle de livre numérique dans le cadre d’un cahier des charges
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Calendrier des séances</h3>
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/edito.jpg" data-background-size="1700px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 2 - 5 septembre</b></br> Édition numérique : dernière arrivée d'une longue histoire</p>
+            <ul>
+              <li> <i class="material-icons">rate_review</i> à annoter : <a
+                  href="https://via.hypothes.is/https://www.cairn.info/revue-communications-2011-1-page-47.htm">Édition
+                  électronique (Dacos, Mounier 2011)</a></li>
+            </ul>
+
+            <p> <i class="material-icons">design_services</i> Zotero + Scribus (partie 1)</p>
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/edition.jpg" data-background-size="1800px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 3 - 12 septembre</b></br>Le Livre : modèle médiatique et défis de ses remédiations</p>
+            <ul>
+              <li> <i class="material-icons">rate_review</i> à annoter : <a href="https://via.hypothes.is/https://books.openedition.org/oep/155">Le livre à l'heure
+                  du numérique : objet fétiche, objet de résistance (Doueihi 2009)</a></li>
+            </ul>
+
+            <p> <i class="material-icons">design_services</i> Scribus (partie 2)</p>
+          </div>
+        </section>
+
+
+        <section data-background-color="#fff" data-background-image="media/brut.png" data-background-size="1700px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 4 - 19 septembre</b></br> Les formats : modèles politiques et économiques</p>
+            <ul>
+              <li> <i class="material-icons">rate_review</i> à annoter : <a
+                  href="https://via.hypothes.is/https://www.parcoursnumeriques-pum.ca/1-pratiques/chapitre9.html"
+                  target="blank">Les formats (Viviane Boulétreau & Benoît Habert, 2014)</a></li>
+            </ul>
+
+            <p> <i class="material-icons">design_services</i> Stylo (partie 1)</p>
+          </div>
+        </section>
+
+
+        <section data-background-color="#fff" data-background-image="media/read.jpg" data-background-size="600px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 5 - 26 septembre</b></br> L'éditeur, entre engagement et loi du marché</p>
+            <ul>
+              <li> <i class="material-icons">rate_review</i> à annoter :<a
+                  href="https://via.hypothes.is/http://www.parcoursnumeriques-pum.ca/1-pratiques/chapitre1.html"
+                  target="blank"> La fonction éditoriale et ses défis (Poirier & Genêt 2014)</a></li>
+            </ul>
+
+            <p> <i class="material-icons">design_services</i> Stylo (partie 2)</p>
+          </div>
+        </section>
+
+
+        <section data-background-color="#fff" data-background-image="media/babel.png" data-background-size="1400px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 6 - 3 octobre</b></br> Chaînes et fabriques du livre : mouvements et collaborations éditoriales
+            </p>
+            <ul>
+              <li> <i class="material-icons">rate_review</i>  à annoter (en mode public) : <a href="https://via.hypothes.is/https://www.digitalstudies.org/article/id/9655/">The Importance of Single Source Publishing in Scientific Publishing (Fauchié 2023)</a></li>
+            </ul>
+
+            <p> <i class="material-icons">design_services</i> Pandoc</p>
+          </div>
+        </section>
+
+
+        <section data-background-color="#fff" data-background-image="media/version.png" data-background-size="1700px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 7 - 10 octobre</b></br> Le manuscrit et les versions : les renouveaux de l'édition savante</p>
+            <ul>
+              <li> <i class="material-icons">rate_review</i> à annoter : <a href="http://parcoursnumeriques-pum.ca/12-editionscritiques/chapitre3.html">Éditions
+                  critiques imprimées et numériques (Alessi 2023)</a></li>
+            </ul>
+
+            <p>  <i class="material-icons">design_services</i> Git</p>
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/fragment.jpg" data-background-size="1400px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 8 - 17 octobre</b></br> Architectures d'information : le livre entre document et data</p>
+            <ul>
+              <li> <i class="material-icons">block</i>  pas d'annotation
+              </li>
+            </ul>
+
+            <p> <i class="material-icons">design_services</i> LEAF</p>
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/anthologie.jpg" data-background-size="2000px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 9 - 31 octobre</b></br> Le modèle anthologique : édition critique et éditorialisation</p>
+            <ul>
+              <li> <i class="material-icons">rate_review</i> à annoter : <a href="https://via.hypothes.is/https://journals.openedition.org/revuehn/371">Pour une théorie de l’éditorialisation (Vitali-Rosati 2020)</a></li>
+            </ul>
+
+            <p> <i class="material-icons">design_services</i> LaTeX + Ekdosis</p>
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/edition.png" data-background-size="1600px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 10 - 7 novembre</b></br> Designs de la lecture et nouvelles matérialités littéraires : ­­</br>enrichissement, hybridation, hypertexte</p>
+            <ul>
+              <li> <i class="material-icons">rate_review</i> à annoter : <a href="https://via.hypothes.is/https://www.cairn.info/revue-de-la-bibliotheque-nationale-de-france-2012-3-page-13.htm">Du récit hypertextuel au récit interactif (Bouchardon 2012)</a></li>
+            </ul>
+
+            <p> <i class="material-icons">groups</i> </p>
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/computers.jpg" data-background-size="1600px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 11 - 14 novembre<small>changement</small></b></br> 
+              Les petites mains de l'édition : réflexion sur les coulisses</p>
+            <ul>
+              <li> <i class="material-icons">rate_review</i> à annoter : <a href="https://www.erudit.org/fr/revues/memoires/2021-v12-n2-memoires06997/1089037ar/">De la travailleuse de l’ombre à la femme d’exception : réflexion sur la présence des femmes dans l’histoire du livre au Québec (Vincent 2022)</a>
+
+              </li>
+            </ul>
+
+            <p> <i class="material-icons">groups</i> </p>
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/identite.jpg" data-background-size="1400px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 12 - 21 novembre</b></br> L'auteur, l'écrivain et le profil</p>
+            <ul>
+              <li> <i class="material-icons">rate_review</i> à annoter : <a
+                  href="https://via.hypothes.is/https://papyrus.bib.umontreal.ca/xmlui/bitstream/handle/1866/18302/lEcrivainDeProfil.pdf?sequence=1&isAllowed=y"
+                  target="blank">L’écrivain de profil(s)... Facebook (Monjour 2017)</a>
+              </li>
+            </ul>
+
+            <p> <i class="material-icons">record_voice_over</i> </p>
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/mimeograph.jpg" data-background-size="1600px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 13 - 28 novembre</b></br> Place aux « fous » : émergences des fanzines, fanfictions</p>
+            <ul>
+              <li> <i class="material-icons">rate_review</i> à annoter : <a href="https://via.hypothes.is/https://www.erudit.org/fr/revues/analyses/2022-v16-n1-analyses06955/1088499ar/">Généalogie du zine contemporain au Québec : de la personnalisation de la politique à une politique de la mise en commun des intimités (Legendre 2022)</a></li>
+            </ul>
+
+            <p> <i class="material-icons">groups</i> (+ <i class="material-icons">record_voice_over</i>) </p>
+          </div>
+        </section>
+        <section data-background-color="#fff" data-background-image="media/vert.jpg" data-background-size="1600px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 14 - 5 décembre</b></br> Écologies du livre : impacts environnementaux et modes d'une culture
+              verte</p>
+            <ul>
+              <li> <i class="material-icons">block</i> pas d'annotation</li>
+            </ul>
+
+            <p> <i class="material-icons">groups</i> </p>
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/chute.png" data-background-size="1600px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <h6>Précisions</h6>
+            <ul>
+              <li>
+                <i class="material-icons">change_circle</i> Possibles changements
+              </li>
+              <li>
+                <i class="material-icons">hourglass_top</i> Longueur variable des séances
+              </li>
+              <li>
+                <i class="material-icons">lock_open</i> Savoirs/outils en libre accès
+              </li>
+            </ul>
+          </div>
+
+        </section>
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="1800px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="1400px">
+          <div id="fondop2">
+            <h4>Modalités d'évaluation</h4>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/chute.png" data-background-size="1600px" data-background-color="#f1eded">
+          <div id="fondop2">
+            <h6>Modes</h6>
+            <ul>
+              <li><i class="material-icons">double_arrow</i> Évaluation continue : 20 %</li>
+              <li><i class="material-icons">star_half</i> Travail de mi-session : 30 % pour le 31 octobre</li>
+              <li><i class="material-icons">star</i> Travail final : 50 % pour le 20 décembre</li>
+            </ul>
+          </div>
+
+        </section>
+
+
+          <section data-background-color="#fff" data-background-image="media/chute.png" data-background-size="1600px"
+            data-transition="linear" data-transition-speed="fast">
+            <div id="fondop2">
+
+              <h6>Évaluation continue : Lecture, discussion des textes et pratique en atelier</h6>
+              <ul>
+                <li>  <i class="material-icons">groups</i> Discussions en classe hebdomadaire</li>
+                <li> <i class="material-icons">rate_review</i> Annotations en ligne hebdomadaire</li>
+                <li> <i class="material-icons">design_services</i> Suivi des exercices pratiques</li>
+              </ul>
+
+              <p>Fréquence - Maîtrise - Pertinence</p>
+
+              <p><b>Dynamique de communauté scientifique numérique</b></p>
+            </div>
+          </section>
+
+
+          <section data-background-color="#fff" data-background-image="media/chute.png" data-background-size="1600px"
+            data-transition="linear" data-transition-speed="fast">
+            <div id="fondop2">
+
+              <h6>Travail de mi-session : Analyse éditée de texte</h6>
+              <ul>
+                <li><i class="material-icons">lists</i>Choix parmi une liste d'articles </br><small><a href="https://www.zotero.org/groups/5435201/eld-/collections/V97YGDFR">collection Zotero <i>Examen-Mi-Session</i></a></small></li>
+                <li><i class="material-icons">description</i> Lecture critique </br><small>1200-1500 mots</small></li>
+                <li><i class="material-icons">edit_document</i> Édition avec un outil présenté en atelier</br><small>de la séance 2 à 8 : Scribus, Stylo, Pandoc, Git, LEAF</small></li>
+              </ul>
+
+              <p>Clarté - Dialogue - Édition</p>
+
+              <p><b>Développer un esprit critique sur l'édition numérique</b></p>
+            </div>
+          </section>
+
+
+          <section data-background-color="#fff" data-background-image="media/chute.png" data-background-size="1600px"
+            data-transition="linear" data-transition-speed="fast">
+            <div id="fondop2">
+
+              <h6>Travail final : Conceptualisation d'un modèle de livre numérique</h6>
+              <ul>
+                <li><i class="material-icons">menu_book</i>  Modélisation théorique d'un livre numérique</li>
+                <li><i class="material-icons">groups</i> Présentation orale du modèle par groupe : 10 %</br><small>­­~ 5 min/personne</small></li>
+                <li><i class="material-icons">notes</i> Descriptif détaillé et édité du modèle : 40 %</li>
+              </ul>
+
+              <p>Structure - Investissement - Organisation</p>
+
+              <p><b>Penser en équipe une réalisation livresque numérique</b></p>
+            </div>
+          </section>
+          <section data-background-image="media/chute.png" data-background-size="1600px"
+            data-background-color="#f1eded">
+            <div id="fondop2">
+              <h6>Au sujet du Plagiat<b></b></h6>
+
+              <ul>
+                <li>≠ Paraphrase</li>
+                <li>Déclarer les sources & références</li>
+                <li>Visibilité du processus de réflexion</li>
+                <li>Éthique intellectuelle</li>
+              </ul>
+              <p><a href="https://www.usherbrooke.ca/flsh/etudes/documents-officiels-guides-et-formulaires/plagiat-et-integrite-intellectuelle" target="_blank">Documentation</a> & <a
+                  href="https://ruor.uottawa.ca/bitstream/10393/12793/4/Vandendorpe_Christian_1992_Le_plagiat.htm"
+                  target="_blank">Définition (Vanderdorpe 1992)</a></p>
+
+            </div>
+          </section>
+
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/chute.png" data-background-size="1800px"
+        data-transition="linear" data-transition-speed="fast">
+        <section data-background-color="#fff" data-background-image="media/chute.png" data-background-size="1800px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <h6>Ressources documentaires</h6>
+
+
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/chute.png" data-background-size="1800px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <h6>Autour du cours</h6>
+            <ul>
+              <li><i class="material-icons">school</i> <a href="" target="_blank">Moodle</a></li>
+              <li><i class="material-icons">preview</i> <a href="https://mmellet.github.io/ELD718/documentation/" target="_blank">Site Web
+                  du cours</a></li>
+              <li><i class="material-icons">library_books</i> Bibliographie Zotero <a href="https://www.zotero.org/groups/5435201/eld-/library"
+                  target="_blank">ELD718-2024</a>
+              </li>
+            </ul>
+
+          </div>
+        </section>
+
+
+        <section data-background-color="#fff" data-background-image="media/zotero.svg" data-background-size="800px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <h6>Zotero</h6>
+            <ul>
+              <li><i class="material-icons">library_books</i> Logiciel de gestion de références gratuit, libre et open source</li>
+              <li><i class="material-icons">devices</i> <a href="https://www.zotero.org/user/register" target="_blank">Compte en ligne</a> /
+                <a href="https://www.zotero.org/download/" target="_blank">Standalone</a> (local)</li>
+              <li><i class="material-icons">help</i> <a href="https://www.zotero.org/support/" target="_blank">Documentation</a></li>
+            </ul>
+
+
+            <p><b>Structuration des références</b></p>
+          </div>
+        </section>
+
+
+        <section data-background-color="#fff" data-background-image="media/hypothesis.png" data-background-size="1400px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <h6>Lecture hebdomadaire</h6>
+            <ul>
+              <li><i class="material-icons">event</i> Un article / semaine
+              </br><small><a href="https://hypothes.is/signup">se créer un compte</a></small></li>
+              <li><i class="material-icons">rate_review</i> Annotation <a href="https://via.hypothes.is/" target="_blank">Hypothesis</a> en ligne
+                : groupe <a href="https://hypothes.is/groups/ADapmgKN/eld718-2024"
+                  target="_blank">ELD718-2024</a>
+              </br><small><a href="https://web.hypothes.is/help/introduction-to-the-hypothesis-lms-app-for-students/">comment annoter</a></small>
+              </li>
+              <li><i class="material-icons">groups</i> Discussion en classe</li>
+            </ul>
+
+
+            <p><b>Dynamique d'échange sur les théories</b></p>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/chute.png" data-background-size="1800px" data-background-color="#f1eded">
+          <div id="fondop2">
+            <h6>Conseils</h6>
+
+            <ul>
+              <li><i class="material-icons">diversity_1</i> Amabilité/Patience dans les échanges</li>
+              <li><i class="material-icons">title</i> Nommage des fichiers : noms courts et clairs, pas de caractères spéciaux, pas d'accents, pas d'espaces</li>
+            </ul>
+          </div>
+
+        </section>
+
+       
+      </section>
+     
+
+       
+
+        
+
+
+
+
+
+
+        
+
+      <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Contexte pré-numérique</h3>
+          </div>
+        </section>
+        <section data-background-image="media/hyper.webp" data-background-size="1800px">
+          <div id="fondop2">
+            <h5>Lignes du temps : <span style="color: rgb(134, 162, 212);">support</span> / <span
+                style="color: rgb(88, 158, 131);">mécanique</span></h5>
+            <table style="font-size:16px;">
+              <tr border="1px">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="fragment" data-fragment-index="1" style="font-size:20; color: rgb(134, 162, 212);">
+                  <b>I<sup>er</sup> siècle avant J.C.</b> </br> Volumen au Codex</td>
+                <td class="fragment" data-fragment-index="2" style="font-size:20; color: rgb(134, 162, 212);">
+                  <b>I<sup>er</sup> siècle après J.C.</b> </br> Papyrus au Parchemin</td>
+                <td class="fragment" data-fragment-index="3" style="font-size:20; color: rgb(134, 162, 212);">
+                  <b>751-1250</b> </br> Parchemin au Papier</td>
+                <td class="fragment" data-fragment-index="4" style="font-size:20; color: rgb(88, 158, 131)">
+                  <b>XIV<sup>e</sup></b> </br> Xylographie</td>
+                <td class="fragment" data-fragment-index="5" style="font-size:20; color: rgb(88, 158, 131)"><b>1450</b>
+                  </br>Imprimerie Gutenberg</td>
+                <td class="fragment" data-fragment-index="7" style="font-size:20; color: rgb(88, 158, 131)"><b>1883</b>
+                  </br> composition de plomb à la photogravure par T. & R. Annan à Glasgow</td>
+                <td class="fragment" data-fragment-index="8" style="font-size:20; color: rgb(88, 158, 131)"><b>fin
+                    XX<sup>e</sup></b> </br> Impression numérique</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <section data-background="media/moine.jpg" data-background-size="1600px">
+          <div id="fondop2">
+            <h6>Édition monastique dans les <i>scriptoria</i></h6>
+            <ul>
+              <li>Édition manuscrite - <i>Print on demand</i></li>
+              <li>XIII<sup>e</sup> : Déplacement vers les centres urbains</li>
+              <li>XV<sup>e</sup> : Xylographie</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background="media/gutenberg.jpg" data-background-size="1600px">
+          <div id="fondop2">
+            <h6>La Galaxie Gutenberg</h6>
+            <ul>
+              <li>1450 : Presse à bras + Gravure + Caratères mobiles</li>
+              <li>1456 : Bible B42</li>
+              <li>Circulation des idées (Humanisme & Réforme)</li>
+              <li>Dépot Légal du 28 décembre 1537</li>
+            </ul>
+            
+          </div>
+        </section>
+
+        <section data-background="media/rotative.png" data-background-size="1400px">
+          <div id="fondop2">
+            <h6>Révolution industrielle</h6>
+            <ul>
+              <li>Développement des lieux d'enseignement</i></li>
+              <li>Première presse à imprimer (Québec 1764)</li>
+              <li>Premières maisons d'édition (Dunod, Colin, Hachette, Larousse)</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/pao.png" data-background-size="1500px">
+          <div id="fondop2">
+            <h6>Révolution digitale</h6>
+            <ul>
+              <li>PAO (Publication Assistée par Ordinateur)
+                +
+                ordinateur
+                +
+                imprimante
+                = bedroom génération</li>
+              
+            </ul>
+            <p><b>Recherche d'un nouveau modèle
+              </b></p>
+          </div>
+        </section>
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="1600px" data-background-color="#f1eded">
+        <div id="fondop2">
+          <p><i class="material-icons">rate_review</i> Annotaton pour la semaine prochaine :</br><a
+              href="https://via.hypothes.is/https://www.cairn.info/revue-communications-2011-1-page-47.htm">Édition
+              électronique (Dacos, Mounier 2011)</a></br>
+              <small><a href="https://hypothes.is/signup">se créer un compte</a> et <a href="https://hypothes.is/groups/ADapmgKN/eld718-2024"
+              target="_blank">rejoindre le groupe d'annotationELD718-2024</a></small> 
+          </p>
+        </div>
+      
+
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="1600px" data-background-color="#f1eded">
+        <div id="fondop2">
+          <p><i class="material-icons">design_services</i> En prévision pour la semaine prochaine :</br>
+           <small>  <a href="https://www.zotero.org/user/register" target="_blank">se créer un compte en ligne Zotero</a></br>
+             et <a href="https://sourceforge.net/projects/scribus/">installer Scribus</a> </small> 
+          </p>
+        </div>
+      
+
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="1600px" data-background-color="#f1eded">
+        <div id="fondop2">
+          <h6><i class="material-icons">help</i> Contact & Disponibilités</h6>
+
+          <ul>
+            <li><a href="mailto:margot.mellet@usherbrooke.ca" target="_blank">margot.mellet@usherbrooke.ca</a></li>
+           
+            <li>Campus de Longueuil, L-12732</br>
+              450 463-1835, poste 61872
+            </br> à partir d'octobre : lundi, mardi, jeudi</li>
+          </ul>
+        </div>
+
+      </section>
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>
