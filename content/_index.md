@@ -7,7 +7,7 @@ Le plan du cours est disponible [ici](./doc/ELD718-A24-plan.pdf).
 
 Cet espace rassemble les différents éléments du cours : 
 
-- le contenu des séances (*à venir*)
+- le [contenu des séances](seances)
 - les [lectures hebdomadaires](lectures)
 - les [modalités d'évaluation](modalites)
 - les [ressources documentaires](documentation)
