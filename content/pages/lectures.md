@@ -10,7 +10,7 @@ title: Lectures
 
 ### Séance 2 
 
-- <a href="https://via.hypothes.is/https://www.cairn.info/revue-communications-2011-1-page-47.htm">Édition électronique (Dacos, Mounier 2011)</a>
+- <a href="https://via.hypothes.is/https://mmellet.github.io/ELD718/doc/edition-electronique.pdf">Édition électronique (Dacos, Mounier 2011)</a>
 
 ----
  
