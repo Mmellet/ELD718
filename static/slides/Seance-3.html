@@ -1,0 +1,1167 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD718 - Édition numérique - A2024</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD718 - Automne 2024 - Margot Mellet</div>
+      <section data-background-image="media/edition.jpg" data-background-size="2200px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD718 | Édition numérique</h2>
+          <h3>12 septembre : Le Livre, modèle médiatique et défis de ses remédiations </h3>
+        </div>
+
+
+
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Une architecture d'information</h3>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/torah.jpg" data-background-size="1600px">
+          <div id="fondop2">
+            <h6>Héritage du Codex</h6>
+            <p><small>passage progressif du <i>volumen</i> au codex au I<sup>er</sup> siècle av. J.C.</small></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/b42.jpg" data-background-size="1600px">
+          <div id="fondop2">
+            <h6>Division de l'information</h6>
+            <p><small>unité de la page + travail de composition</small></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/edition.jpg" data-background-size="2200px" background-color="#21211c">
+          <div id="fondop2">
+            <p>« The page as a house, the scribe as its architect: they are attractive comparisons, which highlight just
+              how much an effective page depended on crafty design, careful planning, and meticulous calculations.</br>
+              Like
+              an architect, the scribe made sure to create a comfortable home for future inhabitants. »</p>
+
+            <p><small>(Kwakkel, <i>The Architecture of the Medieval Page</i>, 2018)</small></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/marges.png" data-background-size="1600px">
+          <div id="fondop2">
+            <h6>Espaces d'appropriation de lecture</h6>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/edition.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h6>Autres principes de la culture du livre</h6>
+            <ul>
+              <li><i>Libro unitario</i></li>
+              <li>le mode imprimé</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/chute.png" data-background-size="1600px">
+          <div id="fondop2">
+            <h6>Nouvelles modalités du support numérique</h6>
+            <ul>
+              <li>défilement infini</li>
+              <small>mais avec marqueurs de structuration (index, table des matières)</small>
+              <li>logique linéaire</li>
+              <small>malgré la pensée de l'hypertexte</small>
+              <li>unité de référence de la version</li>
+              <small>mais chaque version a sa propre existence physique</small>
+              <li>existence alternative à l'impression</li>
+              <small>mais hybridité émergente</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/chute.png" data-background-size="1600px">
+          <div id="fondop2">
+            <h6>Qualités du livre numérique</h6>
+            <ul>
+              <li>lisibilité</li>
+              <small>suppose un format ouvert, ce qui n'est pas le cas pour les formats propriétaires et fermés</small>
+              <li>maniabilité</li>
+              <small>mais les mesures de protection peuvent empêcher les recherches ou manipulations</small>
+              <li>citabilité</li>
+              <small>suppose des bonnes pratiques de structuration avec pour référence les identifiants uniques</small>
+
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/editions.png" data-background-size="1200px">
+          <div id="fondop2">
+            <h5>des éditions, des identités donc des modèles</h5>
+            <ul>
+              <li>Marque culturelle de reconnaissance</li>
+              <li>Modèle pour une utilisation, un public, une idée du fait littéraire</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/edition.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">comment différencier et intégrer le livre numérique dans une identité
+              éditoriale déjà pré-existante ?</p>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Le livre numérique, des remédations</h3>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/chute.png" data-background-size="1200px">
+          <div id="fondop2">
+            <h6>Terminologies</h6>
+            <small>livre numérique, livre électronique, livrel</small>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/incunable.png" data-background-size="2000">
+          <div id="fondop2">
+            <h6><i class="material-icons"></i> Incunables numériques</h6>
+            <small>premières traductions littérales de l'imprimé vers le numérique</small>
+          </div>
+
+        </section>
+
+        <section data-background="media/.png" data-background-size="1400px">
+
+          <div id="fondop2">
+            <h3>Contexte d'émergence</h3>
+            <ul>
+
+              <li>1970 - Crise du livre imprimé avec la montée du prix du papier</li>
+              <small>1971 : Projet Gutenberg ; 1978 : projet Canadiana</small>
+              <li>1990 - Mouvement de recul des ventes en SHS
+
+              </li>
+              <small>signe d'une recherche de nouveaux marchés (Chartier 2005) </br> 1990 projet de numérisation massive
+                de Google, 1995 première librairie aux USA avec Amazon, 1997 Gallica de la BNF</small>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background="media/.png" data-background-size="1400px">
+
+          <div id="fondop2">
+            <h3>Formats pour le livre numérique</h3>
+            <ul>
+
+              <li>2007 - EPuB par l'<i>International Digital Publishing Forum</i></li>
+              <small>format ouvert standardisé fondé sur le XML pour les livres numériques</small>
+              <li>2011 - version 3.0 de l'ePub permettant l'ajout d'éléments multimédia </li>
+              <li>Depuis - émergence de nouveaux formats </li>
+              <small> liés à des plateformes de commercialisation du livre (Kindle d'Amazon) ou faisant du livre une
+                application (iPad)</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="" data-background-size="1500px">
+
+          <div id="fondop2">
+            <h4>Modèle alternatif du numérique</h4>
+            <ul>
+
+              <li><i class="material-icons">payments</i> Réduction du coût</li>
+              <li><i class="material-icons">space_dashboard</i> Meilleure conservation + Gain d'espace</li>
+              <li><i class="material-icons">update</i> Facilité de mises à jour</li>
+              <li><i class="material-icons">swipe_vertical</i> Commodité de consultation, de navigation</li>
+              <li><i class="material-icons">mms</i> Enrichissement hypertextuel & multimédial</li>
+            </ul>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/ludovico.jpg" data-background-size="600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Mouvements entre les médias</p>
+            <p>« Tout nouveau médium prétend toujours posséder des caractéristiques supérieures à celles du document
+              imprimé, et se trouver ainsi en situation de le supplanter. »</p>
+
+            <p><small>(Ludovico, <i>La mutation de l'édition depuis 1894</i>, 2016)</small></p>
+          </div>
+        </section>
+
+
+        <section data-background="media/bolter-grusin.jpg" data-background-size="1400px">
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">La notion de remédiation</p>
+            <p>« [t]out média s’approprie les techniques, les formes et la signification sociale d’autres médias et
+              tente de rivaliser avec eux ou de les refaçonner au nom du réel. Dans notre culture, un média ne peut
+              jamais opérer isolément parce qu’il doit entrer en relation, de respect ou de rivalité, avec d’autres
+              médias. »</p>
+
+            <p><small>(Bolter et Grusin, <i>Remediation: Understanding New Media</i>, 2003)</small></p>
+
+          </div>
+        </section>
+
+
+        <section data-background="media/" data-background-size="1700px">
+
+          <div id="fondop2">
+            <h3>Formes des remédiations du livre</h3>
+            <p style="font-variant: small-caps;">1. version homothétique</p>
+            <small>forme la plus répandue, moins coûteuse, protégée</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/marguerite.png" data-background-size="1400px">
+          <div id="fondop2">
+            <p>versions textes (PDF, texte brut) simplifiées</p>
+          </div>
+        </section>
+
+        <section data-background="media/" data-background-size="1700px">
+
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">2. livre enrichi ou édition augmentée</p>
+            <small>forme en émergence, explore les possibilités du format numérique</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/pum.png" data-background-size="1400px">
+          <div id="fondop2">
+            <p>
+              articulation de versions avec contenus propres à chaque support
+            </p>
+            <small>
+              Collection « Parcours numériques » des Presses Universitaires de Montréal
+            </small>
+          </div>
+        </section>
+
+        <section data-background="media/" data-background-size="1700px">
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">3. livre numérique ou nativement numérique</p>
+            <small>sans référence ni original imprimée</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/nativement.png" data-background-size="1400px">
+          <div id="fondop2">
+            <p>littérature hypertextuelle</p>
+            <small><i>afternoon, a story</i> (Joyce, 1990), <i>Patchwork Girl</i> (Jackson 1995)</small>
+          </div>
+        </section>
+
+        <section data-background="media/.png" data-background-size="1400px">
+
+          <div id="fondop2">
+            <h3>Stratégies culturelles </br>des relations imprimé/numérique</h3>
+            <small>version homothétique pour élargir la visibilité </br> version enrichie pour l'exploration d'une
+              recherche </br> livre nativement numérique correspondant à un projet esthétique</small>
+
+          </div>
+        </section>
+
+        <section data-background="media/edition.jpg" data-background-size="2000px" background-color="#21211c">
+
+          <div id="fondop2">
+            <h3>Possible renversement d'une référence</h3>
+            <small>inversion de la remédiation où l'édition numérique fait référence</small>
+
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Les débats autour du livre</h3>
+          </div>
+        </section>
+
+        <section data-background-image="media/uzanne.png" data-background-size="1200px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Imaginaires de la fin du livre</p>
+            <p>« L’imprimerie qui, à dater de 1436, régna si despotiquement sur nos esprits, me semble menacée de mort,
+              à mon avis, par les divers enregistreurs du son qui ont été récemment découverts et qui peu à peu vont
+              largement se perfectionner. »</p>
+            <small>(Uzanne et Robida, <i>La fin des livres</i>, 1894</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/zones.png" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Hybridités et complémentarités des formes éditoriales</p>
+            <small>exemple : « Parcours numériques » des PUM, « Zones » de La Découverte</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/edition.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Intrication moderne entre imprimé et numérique</p>
+            <p>Aujourd'hui la culture numérique n'existe pas en dehors ou à côté de la culture numérique</p>
+            <small>(Birkerts, <i>The Gutenberg Elegies</i>, 2006)</small>
+          </div>
+        </section>
+        <section data-background-image="media/monjour.jpg" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Rétromédiation d'un mouvement médiatique</p>
+            <p>« De la remédiation à la rétromédiation, il s’agit de souligner la persistance de l’argentique, tout en
+              opérant sa réévaluation dans (et par) notre nouvel environnement numérique. Aussi, les concepts de
+              remédiation et de rétromédiation, tels que nous les entendons ici, s’intéressent au média considéré comme
+              une construction technique autant que discursive – mais aussi institutionnelle, esthétique, etc. »</p>
+            <small>(Monjour, <i>Mythologies postphotographiques</i>, 2018)</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/.jpeg" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Tension entre droits du livre et science ouverte</p>
+            <small>« brisons les barrières de l'ignorance et de l'illétrisme », premier slogan du Projet
+              Gutenberg</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Prise en compte du droit du livre</p>
+            <ul>
+              <li>2000 - <i>Distributed Proofreaders</i> par Charles Franks pour soutenir la numérisation des livres du
+                domaine public</li>
+              <small>vérification des conditions légales, océrisation, relecture et correction x 3, mise en forme x
+                2</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/DPC.png" data-background-size="1800px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Des cas par cas nationaux</p>
+            <ul>
+              <li>2007 - <i>Distributed Proofreaders Canada</i></li>
+              <small>valorisation d'un patrimoine ou d'une thématique nationale, respect du droit d'auteur</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/ina.jpeg" data-background-size="1200px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Enjeux culturels de démocratisation</p>
+            <small>syndrome <a href="https://www.youtube.com/watch?v=wQ-Gp6Xœ7A">« et d'un seul coup ils se sont
+                retrouvés avec Sartre dans les mains »</a></small>
+          </div>
+        </section>
+
+      </section>
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3><i class="material-icons">groups</i> Discussion<h3>
+                <small><a href="https://via.hypothes.is/https://books.openedition.org/oep/155">Le livre à l'heure du
+                    numérique : objet fétiche, objet de résistance (Doueihi 2009)</a>
+                </small>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/milad.webp" data-background-size="1400px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Conversion et Humanisme numérique</p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/.png" data-background-size="1800px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">humanisme numérique</p>
+<small>« le résultat d’une convergence entre notre héritage culturel complexe </br>et une technique devenue un lieu de sociabilité sans précédent  » (2011)</small>
+          </div>
+        </section>
+
+
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3><i class="material-icons">design_services</i> Partie pratique : Scribus (partie 2)</h3>
+            <p>Approfondissement et exercice
+
+              </br> <small>Rappel : Télécharger <a href="https://sourceforge.net/projects/scribus/">Scribus</a></small>
+            </p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/scribus-demarrage.png" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Page de Démarrage</h4>
+            <small>choix de l'orientation, taille du document, unité de mesure, marges, etc.</small>
+              <p><b>Toujours</b> sélectionner l'option d'affichage des préférences après la création du document</p>
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/scribus.png" data-background-size="800px">
+          <div id="fondop2">
+
+            <h4>Reprise de la semaine précédente</h4>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/scribus-interface-full.png" data-background-size="1500px">
+          <div id="fondop2">
+
+            <h4>Organisation de l'interface</h4>
+            <small>zones, repères, lignes d'outils, fenêtres</small>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/contenu-contenant.jpg" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Différence Contenu/Contenant</h4>
+            <small>pour tous les éléments, le cadre est le contenant</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/scribus-contenu-image.png" data-background-size="1300px">
+          <div id="fondop2">
+
+            <h4>Niveaux Contenu/Contenant</h4>
+            <small>niveau contenant : le cadre et l'image bougent; la taille du cadre est modifiée mais pas celle de
+              l'image</small>
+            <small>niveau contenu : l'image dans le cadre bouge; la taille de l'image se modifie mais pas celle du
+              cadre</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/scribus-texte-style.png" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Assigner une caractéristique à l'ensemble ou au fragment (bloc de texte)</h4>
+            <small>niveau contenant : le style va s'apposer à l'ensemble des paragraphes du bloc de texte</small>
+            <small>niveau contenu : le style va s'apposer au paragraphe ou au segment sélectionné</small>
+
+            <p>attention à l'ordre des manipulations : commencer par l'ensemble pour finir par le détail</p>
+            <small>pour éviter qu'une assignation de style sur le contenant écrase une assignation de style sur un
+              segment ou un paragraphe</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/scribus-texte6.png" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Lier deux blocs de texte</h4>
+            <small>deux contenants, un contenu</small>
+            <small></br>icone bas droit du cadre de texte (N)</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/scribus.png" data-background-size="800px">
+          <div id="fondop2">
+
+            <h4>Approfondissement : structuration et organisation</h4>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/scribus-contenu-image.png" data-background-size="1300px">
+          <div id="fondop2">
+
+            <h4>Positionnement image</h4>
+            <small>déplacement + taille de l'image à la taille du cadre</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/scribus-image-proprietes.png" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Une image pour l'imprimé</h4>
+            <small>propriétés de l'image requises</small>
+            <ul>
+              <li>utilisation à 100%</li>
+              <small>l'image imprimée ne doit pas être plus grande que l'image physique</small>
+              <li>colorimétrie en CMJN (Cyan Magenta Jaune Noir) ou CMYK</li>
+              <small>la colorimétrie à l'écran est RVB (Rouge Vert Bleu) ou RGB, or la colorimétrie sur le papier est
+                une quadrichromie</small>
+              <li>300 DPI/PPP</li>
+              <small>jeu avec la taille : tolérance de 10-15% au-dessus et au-dessous de 100%</small>
+
+            </ul>
+            <small></br>éventuelle étape de retravail de l'image dans un logiciel (Photoshop, Gimp, Krita, etc.) </small>
+          </div>
+        </section>
+
+        <section data-background-image="media/calques.png" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Les Calques</h4>
+            <small>organisation de strates d'informations</br></small>
+            <ul>
+              <li>visibilité/invisibilité</li>
+               <li>verrouillage/dévérouillage</li>
+              <small>pour bloquer les éléments de modification</small>
+              <li>modifiable/protégé</li>
+              <small>possibilité d'interaction ou de mode de fusion entre les calques</small>
+
+            </ul>
+               </div>
+        </section>
+
+        <section data-background-image="media/scribus-calque.png" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Les Calques </h4>
+            <small style="margin-left: 13%;">Fenêtres / Calques (ou F6)</small>
+            
+            <ul>
+              <li>1 Calque par défaut de Fond de page</li>
+              <small>de préférence le laisser intact</small>
+              <li>paramètres du cadre</li>
+              <small>affichage, impression, verrouillage, habillage, mode filaire, sélection hors-cadre</small>
+              <li>organisation entre les cadres</li>
+              <small>ordonner (calque texte en début, calque de fond en fin), dupubliquer</small>
+            </ul>
+            <small></br>ajout d'un élément sur le calque ou déplacement à posteriori via le menu contextuel de l'élément</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/scribus-fusion.png" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Recouvrements et interactions</h4>
+           
+            <ul>
+              <li>Jeu avec les opacités des éléments</li>
+              <li>Modes de fusion </li>
+              <small>pour les éléments graphiques, comment vont réagir les pixels entre eux ?</small>
+              <small>exemple : assombrir = les pixels n'apparaissent que s'ils sont plus sombres que les pixels du dessous</small>
+                </ul>
+            </div>
+        </section>
+
+        <section data-background-image="media/scribus-interaction.png" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Interaction Texte | Image</h4>
+           
+            <ul>
+              <li>Choix dans Propriété de l'image (contenant) d'une forme</li>
+              <li>Disposition du bloc texte en dessous du bloc image</li>
+              <small>par système de calques (un calque pour le texte, un autre pour l'image) ou disposition dans le menu contextuel du bloc texte</small>
+            <li>Choix de l'habillage dans Forme des Propriété de l'image</li> 
+            <small>possibilité d'ajouter un contour et donc un espace supplémentaire entre les éléments avec l'option Modifier dans Forme des Propriété de l'image</small>
+            </ul>
+            </div>
+        </section>
+
+
+        <section data-background-image="media/scribus-interaction2.png" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Mise en forme du texte</h4>
+           
+            <ul>
+              <li>Différence entre style de paragraphe / style de caractère</li>
+             <small>peuvent être complémentaires mais peuvent aussi s'écraser</small>
+              <li>Césure pour éviter les lézardes blanches causées par le mode Justifié</li>
+              <small>pour activer les césures : onglet Extra / Effectuer les césures</small>
+              <small>autorisation du code typographique jusqu'à 3 lignres consécutives avec césure</small>
+          </ul>
+            </div>
+        </section>
+
+
+        <section data-background-image="media/scribus-style.png" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Personnalisation des styles</h4>
+           
+            <ul>
+              <li>Conception des styles en amont de l'importation du texte</li>
+              <li>Lien entre les styles paragraphe et les styles caractère</li>
+              <small>pour créer un style : onglet Édition / Style</small>
+            <li>Choix des styles selon les niveaux de discours</li> 
+            <small>bonne pratique : apposer un style sur des segments</small>
+             </ul>
+            </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Export</h4>
+           
+            <ul>
+               <li>Export PDF ou ePub</li>
+                
+              <li>Format .sla
+              </li> 
+              <small>format des documents de travail sur Scribus</small>
+              
+             </ul>
+            </div>
+        </section>
+
+        <section data-background-image="media/scribus.png" data-background-size="800px">
+          <div id="fondop2">
+
+            <h4>Conseils</h4>
+            <ul>
+              <li><b>Toujours</b> nommer les calques</li>
+              <li>Pour éviter les écrasements, éditer du plus grand au plus petit, de l'ensemble au détail</li>
+            <li>Naviguer entre affichage et désaffichage pour économiser la machine et les yeux</li>
+          <li>Afficher les caractères invisibles durant la mise en forme du texte</li>
+          <li>Vérification finale avec le mode Aperçu (Ctrl+Alt+P)</li>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/scribus.png" data-background-size="800px">
+          <div id="fondop2">
+
+            <h4>Exercice : Édition d'inspiration sur le modèle Bible42</h4>
+            <small>pas à pas disponible dans le <a href="https://mmellet.github.io/ELD718/doc/3.pdf">vade-mecum de la Séance 3</a>
+            </small>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Page de démarrage</h4>
+           
+            <ul>
+              <li>Page en vis-à-vis</li>
+              <li>Marges : Intérieur = 12, 9 mm ; Extérieur = 25, 8 mm ; Haut = 18, 244 mm ; Bas = 36, 489 mm</li>
+            <li>Fond perdu : 1 mm partout</li> 
+            <li>Nombre de page : 3</li>
+        <li>Cocher « Afficher les préférences du document à la création »</li>
+
+             </ul>
+            </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Deuxième page</h4>
+           
+            <ul>
+              <li>Créer un nouveau calque « Corps de texte »</li>
+              <li>Dans ce cadre : créer des blocs de texte (T)</li>
+            <li>Propriété du cadre de texte avec point de référence haut gauche :
+              <ul>
+                <li>page de gauche : X = 25,8 mm ; Y = 18, 244 mm ; Largueur = 171, 3 mm ; Hauteur = 242, 267 mm</li>
+                <li>page de droite : X = 12, 9 mm ; Y = 18, 244 mm ; Largueur = 171, 3 mm ; Hauteur = 242, 267 mm</li>
+              </ul></li> 
+            
+             </ul>
+            </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Blocs de texte</h4>
+           
+            <ul>
+            <li>Créer 2 colonnes par bloc de texte : Gouttière de 5 mm</li>
+            <li>Dans le premier bloc de texte : insérer un faux texte (faux texte standard, 12 paragraphes)</li>
+            <li>Lier les blocs de textes</li>
+
+             </ul>
+            </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Blocs de texte</h4>
+           
+            <ul>
+            <li>Police : Times New Roman, Justifié</li>
+            <li>Aligner le texte sur la grille</li>
+            <li>Veuves et orphelines : ne pas séparer les premières/dernières 2 lignes</li>
+<li>Césure : effectuer les césures (onglet Extra)</li>
+             </ul>
+            </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Premier paragraphe</h4>
+           
+            <ul>
+            <li>Effets de paragraphe : Lettrine = 5 lignes</li>
+            
+             </ul>
+            </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Deuxième page</h4>
+           
+            <ul>
+              <li>Créer un nouveau calque « Illustration »</li>
+              <li>Dans ce cadre : créer un bloc image (I)
+        
+              </li>
+              <small>contenu du bloc image : <a href="https://mmellet.github.io/ELD718/images/escargot.png">« escargot.png »</a></small>
+            <li>Propriété du cadre d'image avec point de référence haut gauche : X : 193,133 mm ; Y : 0,127 mm ; Largeur : 24,795 mm ; Hauteur : 37,042 mm
+              </li> 
+            <li>Propriété de l'image : aux dimensions du cadre</li>
+             </ul>
+            </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Interaction Image - Texte</h4>
+           
+            <ul>
+              <li>Propriété de l'image : Forme par défaut : ovale</li>
+              <li>Propriété de l'image : Forme - Modifier (10 % d'aggrandissement/réduction)</li>
+              <small>cocher l'option « Modifier le contour »</small>
+            <li>Propriété de l'image : Forme - Habillage du cadre : Utiliser le contour
+              </li> 
+            
+             </ul>
+            </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Page de garde</h4>
+           
+            <ul>
+              <li>Créer un nouveau calque « Page de garde »</li>
+              <li>Dans ce cadre : créer un bloc texte et un bloc image (I)</li>
+           
+              <li> Ajouter un titre et un sous-titre : « Livre de ... », « Inspiration de ... »
+              </li> 
+              <li>Éditer un nouveau style pour la page de garde</li>
+              <small>onglet Édition / Style </small>
+              <small>choix de police, taille libre</small>
+              <li>Appliquer le style au titre et sous-titre</li>
+              <li>Disposer le bloc image où vous le souhaitez</li>
+              <small>contenu du bloc image : <a href="https://mmellet.github.io/ELD718/images/papillon.png">« papillon.png »</a> ou <a href="https://mmellet.github.io/ELD718/images/ours.png">« ours.png »</a></small>
+            
+             </ul>
+            </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1700px">
+          <div id="fondop2">
+
+            <h4>Export</h4>
+           
+            <ul>
+              <li>Vérifier l'édition avec l'option dans la ligne d'outil avec le mode Aperçu (Ctrl+Alt+P)</li>
+              <li>Export PDF</li>
+              <small>les erreurs listées doivent être celles liées aux images</small>
+           
+              <li> Enregistrement .sla
+              </li> 
+              <small>format des documents de travail sur Scribus</small>
+              <li>Si vous n'êtes pas sur un ordinateur personnel : envoyez-vous par courriel les fichiers .pdf et .sla</li>
+              
+             </ul>
+            </div>
+        </section>
+     
+
+        <section data-background-image="media/scribus.png" data-background-size="800px">
+          <div id="fondop2">
+
+            <h4>Pour aller plus loin </h4>
+            <ul>
+<li>Possibilité de faire de l'édition un modèle ou une maquette</li>
+<li>Poursuivre l'édition en structurant de nouvelles informations</li>
+<small>informations légales, pagination, etc.</small>
+<li>Maîtriser les raccourcis clavier de scribus : <a href="https://mmellet.github.io/ELD718/documentation/#raccourcis-scribus">Documentation</a></li>
+<li>Explorer d'autres fonctionnalités de Scribus : <a href="https://wiki.scribus.net/canvas/Scribus">Wiki de Scribus</a></li>          
+</ul>
+</div>
+        </section>
+
+
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="1600px" data-background-color="#f1eded">
+        <div id="fondop2">
+          <p><i class="material-icons">rate_review</i> Annotation pour la semaine prochaine :</br><a
+              href="https://via.hypothes.is/https://www.parcoursnumeriques-pum.ca/1-pratiques/chapitre9.html"
+              target="blank">Les formats (Viviane Boulétreau & Benoît Habert, 2014)</a>
+          </p>
+        </div>
+
+
+      </section>
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>
