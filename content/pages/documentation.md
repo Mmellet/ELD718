@@ -50,6 +50,31 @@ Cette page référence les documentations utiles au cours sur l'usage des outils
 
 - [Atelier 1](https://mmellet.github.io/ELD718/slides/Seance-2.html#/6)
 
+- [Atelier 2](https://mmellet.github.io/ELD718/slides/Seance-3.html#/5)
+
+### Raccourcis Scribus
+
+Aide : F1
+Panneau Propriété : F2
+
+##### Actions sur un élément 
+- E : Editer le contenu (texte pour un bloc de texte)
+- N : Lier les cadres de texte
+- Ctrl+A : Sélectionner tout
+- Ctrl+C : Copier
+- Ctrl+D : Dupliquer
+- Ctrl+F : Rechercher-Remplacer
+- Ctrl+S : Enregistrer
+
+##### Ajouter des éléments 
+- B : Tableau 
+- I : Bloc Image 
+- T : Bloc Texte 
+- I : Bloc Image 
+
+[Plus de raccourcis encore](https://wiki.scribus.net/canvas/Raccourcis_clavier,_par_touche)
+
+
 <!--
 ### Commandes Terminal 
 
