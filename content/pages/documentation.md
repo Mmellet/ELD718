@@ -44,7 +44,7 @@ Cette page référence les documentations utiles au cours sur l'usage des outils
 
 ### Zotero
 
-[Atelier]](https://mmellet.github.io/ELD718/slides/Seance-2.html#/6)
+[Atelier](https://mmellet.github.io/ELD718/slides/Seance-2.html#/6)
 
 ### Scribus
 
