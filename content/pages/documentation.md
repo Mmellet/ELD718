@@ -51,7 +51,7 @@ Cette page référence les documentations utiles au cours sur l'usage des outils
 - [Atelier 1](https://mmellet.github.io/ELD718/slides/Seance-2.html#/6)
 
 - [Atelier 2](https://mmellet.github.io/ELD718/slides/Seance-3.html#/5)
-
+    - Exemple de résultat : [PDF](https://mmellet.github.io/ELD718/doc/Atelier-Scribus.pdf) et [.sla](https://mmellet.github.io/ELD718/doc/Atelier-Scribus.sla)
 ### Raccourcis Scribus
 
 Aide : F1
@@ -74,6 +74,8 @@ Panneau Propriété : F2
 
 [Plus de raccourcis encore](https://wiki.scribus.net/canvas/Raccourcis_clavier,_par_touche)
 
+
+## Stylo
 
 <!--
 ### Commandes Terminal 
