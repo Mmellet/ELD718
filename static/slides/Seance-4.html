@@ -1,0 +1,1010 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD718 - Édition numérique - A2024</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    .batman {
+      background-color: #d7d9f2;
+    }
+
+    .flash {
+      background-color: #9de2c8dc;
+    }
+
+    .pouf {
+      background-color: #e29dcbdc;
+    }
+
+    table {
+      border: 2px solid rgb(140 140 140);
+      font-family: sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+    }
+
+
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+  </style>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD718 - Automne 2024 - Margot Mellet</div>
+      <section data-background-image="media/brut.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD718 | Édition numérique</h2>
+          <h3>19 septembre : Les formats, modèles politiques et économiques</h3>
+        </div>
+
+
+
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Ce que l'on déclare/détermine dans le format</h3>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/oignon.jpeg" data-background-size="1600px">
+          <div id="fondop2">
+            <h5>Écriture numérique</h5>
+            <ol>
+              <li><i class="material-icons">exposure_zero</i> niveau de manipulation des unités formelles (0, 1)</li>
+              <small>écriture selon la machine</small>
+              <li><i class="material-icons">code</i> niveau de formatage et de code</li>
+              <small>écriture pour la machine</small>
+              <li><i class="material-icons">edit</i> niveau de l'interaction</li>
+              <small>écriture sur la machine</small>
+            </ol>
+          </div>
+        </section>
+
+        <section data-background="media/ascii.png" data-background-size="1400px">
+
+          <div id="fondop2">
+            <h3><i>ASCII</i></h3>
+            <ul>
+              <li>1960 - <i>American Standard Code for Information Interchange</i></li>
+              <small>code américain normalisé pour l'échange d'information</small>
+              <li>norme informatique pour l'encodage des caractères</li>
+              <small>lettres, chiffres, symboles</small>
+              <li>Standard informatique ouvert et libre</li>
+              <small>à l'origine des codes qui ont suivi comme le standard mondial Unicode </small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1600px">
+          <div id="fondop2">
+            <h6>Un document numérique</h6>
+
+            <ul>
+              <li><i class="material-icons">content_cut</i> Vue séquentielle</li>
+              <small>manipulation du texte (copier/coller, remplacer...)</small>
+              <li><i class="material-icons">list</i> Vue arborescente</li>
+              <small>structuration du texte (numéroter, indexer...)</small>
+              <li><i class="material-icons">analytics</i> Vue métadonnées</li>
+              <small>qualification du texte (métadonnées)</small>
+              <li><i class="material-icons">format_size</i> Vue stylisée (facultative)</li>
+              <small>présenter l'image du texte (style)</small>
+
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/brut.png" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Définition</p>
+            Structure définie de données contenues sur un support magnétique ou autre, établie selon des
+            règles qui régissent le stockage, l'affichage, la manipulation, l'impression ou la
+            transmission de ces données.</i></p>
+
+            <small><a
+                href="https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8368613/format-de-fichier?utm_campaign=Redirection%20des%20anciens%20outils&utm_content=id_fiche%3D8368613&utm_source=GDT">OQLF,
+                2001</a></small>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/brut.png" data-background-size="2200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Critères du format</p>
+            <ul>
+              <li>Pertinence</li>
+              <small>réponse à des pratiques/besoins</small>
+              <li>Économie</li>
+              <small>équilibre entre rentabilité du format/performances</small>
+              <li>Efficacité</li>
+              <small>gestion des contenus et manipulations</small>
+              <li>Sécurité</li>
+              <small>protection des données, restriction des utilisations</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/brut.png" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Un format = une représentation non-neutre d'un type de savoir</p>
+            <small>mais n'est pas un logiciel (Word) et ne se résume pas à une extension (.docx)</small>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/" data-background-size="1600px">
+          <div id="fondop2">
+            <table>
+              <caption>
+                </br>
+                Accessibilité aux spécifications du format <small>est-ce que je peux savoir comment le format a été
+                  construit ?</small>
+              </caption>
+              <colgroup>
+                <col />
+                <col span="1" class="batman" />
+                <col span="1" class="flash" />
+              </colgroup>
+              <tr>
+                <td style="text-align: center;"><i class="material-icons">login</i></td>
+                <th scope="col">Ouvert</th>
+                <th scope="col">Fermé</th>
+              </tr>
+              <tr>
+                <th style="vertical-align: middle;">Caractéristiques</th>
+                <td>Spécifications connues, Interopérabilité favorisée</td>
+                <td>Spécifications inconnues, Interopérabilité limitée</td>
+
+              </tr>
+            </table>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1600px">
+          <div id="fondop2">
+            <table>
+              <caption>
+                </br>
+                Propriété du format </br><small>à qui le format revient-il ?</small>
+              </caption>
+              <colgroup>
+                <col />
+                <col span="1" class="batman" />
+                <col span="1" class="flash" />
+              </colgroup>
+              <tr>
+                <td style="text-align: center;"><i class="material-icons">key</i></td>
+                <th scope="col">Propriétaire</th>
+                <th scope="col">Libre/Normalisé</th>
+              </tr>
+              <tr>
+                <th style="vertical-align: middle;">Caractéristiques</th>
+                <td>Entités privées, Spécificités définies par un producteur, </br>Intérêts privés</td>
+                <td>Communautés, Standards évoluant avec les pratiques, </br>Intérêts communs</td>
+
+              </tr>
+            </table>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/chute.png" data-background-size="1600px">
+          <div id="fondop2">
+            <h6>Exemples</h6>
+            <ul>
+              <li><i class="material-icons">grid_view</i> DOCX : propriétaire (Microsoft) ouvert depuis 2006</li>
+              <li><i class="material-icons">picture_as_pdf</i> PDF : propriétaire (Adobe) ouvert</li>
+              <li><i class="material-symbols-outlined">
+                  markdown
+                </i> Markdown : libre ouvert</li>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/" data-background-size="1600px">
+          <div id="fondop2">
+            <table>
+              <caption>
+
+                </br>
+                Différence entre texte brut et texte riche
+              </caption>
+              <colgroup>
+                <col />
+                <col span="1" class="batman" />
+                <col span="1" class="flash" />
+              </colgroup>
+              <tr>
+                <td style="text-align: center;"><i class="material-icons">search</i></td>
+
+                <th scope="col">TXT</th>
+                <th scope="col">DOCX</th>
+              </tr>
+              <tr>
+                <th style="vertical-align: middle;">Caractéristiques</th>
+                <td>Libre,
+                  </br>Ouvert,
+                  </br>Format texte,
+                  </br>Vue séquentielle,
+                  </br>Compatible avec tous les éditeurs</td>
+                <td>Propriétaire,
+                  </br>Ouvert,
+                  </br>Format binaire,
+                  </br>Vue stylisée,
+                  </br>Compatible avec OpenOffice/LibreOffice</td>
+
+              </tr>
+            </table>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1600px">
+          <div id="fondop2">
+            <table>
+              <caption>
+                </br>
+                Niveaux d'information </br><small>à quelles données le format se destine-t-il ?</small>
+              </caption>
+              <colgroup>
+                <col />
+                <col span="1" class="batman" />
+                <col span="1" class="flash" />
+                <col span="1" class="pouf" />
+              </colgroup>
+              <tr>
+                <td style="text-align: center;"><i class="material-icons">reorder</i></td>
+                <th scope="col">Corps de texte</th>
+                <th scope="col">Métadonnées</th>
+                <th scope="col">Bibliographie</th>
+              </tr>
+              <tr>
+                <th style="vertical-align: middle;">Caractéristiques</th>
+                <td>Markdown, Texte brut</td>
+                <td>YAML, JSON</td>
+                <td>BibTeX, RDF</td>
+              </tr>
+            </table>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1600px">
+          <div id="fondop2">
+            <table>
+              <caption>
+                </br>Rôle du format </br><small>quand et à quoi sert-il dans la chaîne ?
+                </small>
+              </caption>
+              <colgroup>
+                <col />
+                <col span="1" class="batman" />
+                <col span="1" class="flash" />
+              </colgroup>
+              <tr>
+                <td style="text-align: center;"><i class="material-icons">sync_alt</i></td>
+
+                <th scope="col">Source</th>
+                <th scope="col">de Sortie</th>
+              </tr>
+              <tr>
+                <th style="vertical-align: middle;">Caractéristiques</th>
+                <td>.doc, .docx, .txt, md, .tex, .yml, .html</td>
+                <td>.pdf, .epub, .html</td>
+
+              </tr>
+            </table>
+
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/brut.png" data-background-size="2200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Non-neutralité du format ≠ habillage</p>
+            <ul>
+              <li>Définition technique</li>
+              <small>détermine les interopérabilités, la pérénisation, la gestion des données</small>
+              <li>Forme culturelle</li>
+              <small>détermine le texte comme un produit-client ou un espace de communauté</small>
+              <li>Modélisation épistémologique</li>
+              <small>détermine la pensée du texte en amont</small>
+            </ul>
+          </div>
+        </section>
+
+
+
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Les formats du livre numérique</h3>
+          </div>
+        </section>
+
+
+
+
+
+        <section data-background="media/epub.svg" data-background-size="1000px">
+
+          <div id="fondop2">
+            <h3>EPub
+              </br><small>historique</small></h3>
+            <ul>
+              <li>1998 - Open eBook (OEB), <i>SoftBook Press</i></li>
+              <small>repris en 2005 par l’<i>International Digital Publishing Forum</i> pour créer l'ePub</small>
+              <li>Norme ouverte et commune du livre numérique</li>
+              <small>2013 - reconnu comme norme internationale par l'IPA (Union internationale des éditeurs)</small>
+
+            </ul>
+          </div>
+        </section>
+
+        <section data-background="media/epub.png" data-background-size="1000px">
+
+          <div id="fondop2">
+            <h3>EPub
+              </br><small>caractéristiques</small></h3>
+            <ul>
+              <li>Conteneur .epub de fichiers HTML et CSS</li>
+              <small>organisation en dossier, un chapitre par fichiers</small>
+              <li>Format libre et ouvert</li>
+              <small>compatible avec la plupart des dispositifs </br>grâce à une organisation recomposable et une mise
+                en page flottante</small>
+              <li>Éditions homothétiques et nativement numériques</li>
+              <small>recherche plein-texte, annotations, animations</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background="media/frog.png" data-background-size="800px">
+
+          <div id="fondop2">
+            <h3>EPub
+              </br><small>extension</small></h3>
+            <ul>
+              <li>2016 - FROG pour <i>FRee your cOGnition</i> par MOBiDYS</li>
+              <small>format accessible pour les lecteurs/rices en situation de handicap dys</small>
+              <li>Porté par le projet Biblius.ca</li>
+              <small>service de prêt de livres numériques entre bibliothèques au Québec</small>
+              <li>Porté par le projet Lireedoo</li>
+              <small>qui vise à l'application de méthode d'apprentissage plus inclusive</small>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background="media/.png" data-background-size="1400px">
+
+          <div id="fondop2">
+            <h3>Autres formats </br><small>Amazon</small></h3>
+            <ul>
+              <li>MOBI ou mobipocket</li>
+              <small>format propriétaire pour appareils Amazon</small>
+              <li>AZW ou KF8 (Kindle Format 8)</li>
+              <small>format propriétaire pour les appareils Kindle</small>
+            </ul>
+          </div>
+        </section>
+
+
+
+        <section data-background="media/.png" data-background-size="1400px">
+
+          <div id="fondop2">
+            <h3>Autres formats
+            </br><small>ouverts</small></h3>
+            <ul>
+              <li>PDF pour <i>Portable Document Format</i></li>
+              <small>format propriétaire Adobe</small>
+              <li>HTML</li>
+              <small>format/langage pour la gestion des hypertextes</small>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background="media/.png" data-background-size="1400px">
+
+          <div id="fondop2">
+            <h3>Autres formats
+            </br><small>propriétaires</small></h3>
+            <ul>
+              <li>IBA</li>
+              <small>format propriétaire Apple pour les appareils iOS</small>
+              <li>RTF pour <i>Rich Text Format</i></li>
+              <small>format propriétaire Microsoft pour la plupart des traitements de texte</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background="media/.png" data-background-size="1400px">
+
+          <div id="fondop2">
+            <h3>Autres formats
+            </br><small>accessibles</small></h3>
+            <ul>
+              <li>DAISY pour <i>Digital Accessible Information System</i></li>
+              <small>format pour livres audio qui permet la lecture à voix haute et la navigation tactile</small>
+              <li>PDF/UA pour <i>PDF/Universal Accessibility</i></li>
+              <small></small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background="media/skeumorphique.jpg" data-background-size="1200px">
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Design Skeumorphique</p>
+            <p>« un élément de design ou une structure qui ne sert aucun but dans l'objet formé à partir du nouveau
+                matériau, mais qui était essentiel dans l'objet fait à partir du matériau original » (Basalla 1988)</p>
+               </div>
+        </section>
+
+
+
+        <section data-background="media/.png" data-background-size="1400px">
+
+          <div id="fondop2">
+            <h5><i class="material-icons">lock</i> DRM</h5>
+         
+            <ul>
+              <li>Digital Rights Management</li>
+              <small>outil de gestion de droits numériques</small>
+              
+            </ul>
+          
+          </div>
+        </section>
+
+        <section data-background="media/.png" data-background-size="1400px">
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Protection du document par la restriction</p>
+         
+            <ul>
+              <li><i class="material-icons">payments</i> économique</li>
+              <small>payant</small>
+              <li><i class="material-icons">account_balance</i> institutionnelle</li>
+              <small>affiliation</small>
+              <li><i class="material-icons">devices</i> technique</li>
+              <small>appareil, format ou plateforme</small>
+              <li><i class="material-icons">edit</i> éditoriale</li>
+              <small>non-modifiable ou manipulable</small>
+              
+            </ul>
+          
+          </div>
+        </section>
+
+        <section data-background="media/.png" data-background-size="1400px">
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;"><i class="material-icons">warning</i> nouvelles modalités de la propriété</p>
+         
+            <small>la propriété dépend des conditions d'utilisation</small>
+          </div>
+        </section>
+
+
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3><i class="material-icons">groups</i> Discussion<h3>
+                <small><a
+                    href="https://via.hypothes.is/https://www.parcoursnumeriques-pum.ca/1-pratiques/chapitre9.html"
+                    target="blank">Les formats (Viviane Boulétreau & Benoît Habert, 2014)</a></small>
+          </div>
+        </section>
+
+        <section data-background="media/chute.png" data-background-size="1000px">
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Différence texte / fichier / document / format</p>
+            <ul>
+              <li>Un texte</li>
+              <small>suite de caractères</small>
+              <li>Un fichier</li>
+              <small>ensemble de données stockées sur un ordinateur</small>
+              <li>Un document</li>
+              <small>fichier contenant des éléments et les organisant</small>
+              <li>Un format</li>
+              <small>organisation des informations</small>
+            </ul>
+          </div>
+        </section>
+
+
+
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3><i class="material-icons">design_services</i> Partie pratique : Stylo (partie 1)</h3>
+            <p>Présentation et découverte de l'interface
+
+              </br> <small>Création de compte : <a href="https://stylo.huma-num.fr/">Stylo</a></small>
+            </p>
+
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/" data-background-size="1600px">
+          <div id="fondop2">
+            <table>
+              <caption>
+                </br>Différence entre éditeur et traitement de texte
+              </caption>
+              <colgroup>
+                <col />
+                <col span="1" class="batman" />
+                <col span="1" class="flash" />
+              </colgroup>
+              <tr>
+                <td style="text-align: center;"><i class="material-icons">edit</i></td>
+
+                <th scope="col">Traitement</th>
+                <th scope="col">Éditeur</th>
+              </tr>
+              <tr>
+                <th style="vertical-align: middle;">Orientation</th>
+                <td>Style et mise en page
+                </br><i>What You See Is What You Get</i>
+                </br><small> Microsoft Word, Google Docs, Pages</small>
+                </td>
+                <td>Balisage et sémantisation
+                </br><i>What You See Is What You Mean</i>
+                </br> <small>Stylo, Zettler, Atom</small>
+                </td>
+
+              </tr>
+            </table>
+
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/.jpg" data-background-size="1700px">
+          <div id="fondop2">
+            <h5>Stylo</h5>
+            <ul>
+              <li>Projet et outil de la <a href="https://ecrituresnumeriques.ca/fr/">CRC
+                  sur les écritures numériques</a></li>
+              <small>Développement : Arthur Juchereau, Timothée Guicherd, David Larlet, Sarah
+                Rubio</small>
+              <li>Hébergement par la TGDIR <a href="https://www.huma-num.fr/">HumaNum</a>
+              </li>
+              <small>Très GranDe Infrastructure de Recherche</small>
+              <li>Utilisation par plusieurs instances éditoriales</li> 
+              <small><a href="http://sens-public.org/">Sens public</a>, <a
+                  href="https://nouvellesvues.org/">Nouvelles Vues</a>, <a href="https://ronjournal.org/">Romantism on
+                  the Net</a></small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1300px">
+          <div id="fondop2">
+            <h5>Stylo
+            </br><small>fonction</small>
+            </h5>
+            <ul>
+              <li>Éditeur de texte pour la rédaction scientifique</li>
+              <small>écrire, structurer, prévisualiser, réviser, exporter</small>
+              <li>Utilisation de standards</li> 
+              <small>Markdown, YAML, BibTeX</small>
+       
+              <li>Compte en ligne gratuit et ouvert</li>
+                         </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/stylo-interface.png" data-background-size="1700px">
+          <div id="fondop2">
+            <h6>Interface</h6>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/" data-background-size="1300px">
+          <div id="fondop2">
+            <h5>Exercice dans la page de gestion des articles
+            </h5>
+            <ul>
+              <li>1. <i class="material-icons">add</i> Créer un nouvel article</li>
+              <small>nommé « Nom_Test »</small>
+              <li>2. <i class="material-icons">sell</i> Créer une nouvelle étiquette</li> 
+              <small>nom et couleur au choix</small>
+              
+              <li>3. <i class="material-icons">link</i> Lier votre nouvel article à l'étiquette</li>
+                 <small>vérification : sélectionner dans le menu Étiquettes, la nouvelle étiquette</br>
+                votre nouvel article devrait être le seul listé</small>      
+          <li>4. <i class="material-icons">send</i> Envoyer le nouvel article à margot.mellet@umontreal.ca</li>
+        <small>si le destinataire modifie/supprime l'article reçu, votre article ne sera pas modifié/supprimé</small>    
+        </ul>
+          </div>
+        </section>
+
+
+
+
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="1600px" data-background-color="#f1eded">
+        <div id="fondop2">
+          <p><i class="material-icons">rate_review</i> Annotation pour la semaine prochaine :</br>
+            <a href="https://via.hypothes.is/http://www.parcoursnumeriques-pum.ca/1-pratiques/chapitre1.html" target="blank">La fonction éditoriale et ses défis (Poirier & Genêt 2014)</a>
+          </p>
+        </div>
+
+
+      </section>
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>
