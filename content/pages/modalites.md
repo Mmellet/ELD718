@@ -11,7 +11,7 @@ title: Modalités d'évaluation
 </div>
 
 
-### Examen de mi-session 
+### Travail de mi-session 
 
 <iframe src="https://mmellet.github.io/ELD718/slides/Travail-mi-session.html" title="description"  height="500" width="800" allowfullscreen="allowfullscreen"></iframe>
 
