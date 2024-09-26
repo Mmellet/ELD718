@@ -42,17 +42,25 @@ Cette page référence les documentations utiles au cours sur l'usage des outils
 -------------------------
 -------------------------
 
+### Hypothesis 
+
+- [Astuces pour des annotations réussies](https://web.hypothes.is/annotation-tips-for-students/)
+
+-------------------------
+-------------------------
 ### Zotero
 
 [Atelier](https://mmellet.github.io/ELD718/slides/Seance-2.html#/6)
 
+-------------------------
+-------------------------
 ### Scribus
 
 - [Atelier 1](https://mmellet.github.io/ELD718/slides/Seance-2.html#/6)
 
 - [Atelier 2](https://mmellet.github.io/ELD718/slides/Seance-3.html#/5)
     - Exemple de résultat : [PDF](https://mmellet.github.io/ELD718/doc/Atelier-Scribus.pdf) et [.sla](https://mmellet.github.io/ELD718/doc/Atelier-Scribus.sla)
-### Raccourcis Scribus
+#### Raccourcis Scribus
 
 Aide : F1
 Panneau Propriété : F2
@@ -74,10 +82,17 @@ Panneau Propriété : F2
 
 [Plus de raccourcis encore](https://wiki.scribus.net/canvas/Raccourcis_clavier,_par_touche)
 
+-------------------------
+-------------------------
 
 ## Stylo
 
 - [Atelier 1](https://mmellet.github.io/ELD718/slides/Seance-4.html#/4)
+- [Atelier 2](https://mmellet.github.io/ELD718/slides/Seance-5.html#/5)
+
+
+-------------------------
+-------------------------
 
 <!--
 ### Commandes Terminal 
@@ -378,7 +393,7 @@ L'index pour les prises de notes collaboratives se trouve [ici](https://demo.hed
 
 -------------------------
 -------------------------
-
+-->
 
 ### Markdown
 
@@ -435,7 +450,7 @@ Voici mon texte[^1]
 
 <a href="https://www.arthurperret.fr/tutomd/" target="blank">Traduction en ligne par Arthur Perret</a>
 					
-
+<!--
 -------------------------
 -------------------------
 
@@ -478,18 +493,7 @@ Afin de suivre en simultané le rendu de votre édition vous pouvez choisir la d
 -------------------------
 -------------------------
 
-### Stylo 
 
-- [Documentation officielle](http://stylo-doc.ecrituresnumeriques.ca/fr_FR/#!index.md)
-
-<iframe src="https://ia803205.us.archive.org/13/items/stylo-doc-fr/StyloDocFR.mp4" target="blank">Vidéo de démonstration</iframe>
--------------------------
-
--------------------------
-
-### Hypothesis 
-
-- [Astuces pour des annotations réussies](https://web.hypothes.is/annotation-tips-for-students/)
 
 ------------------
 ---------------------
