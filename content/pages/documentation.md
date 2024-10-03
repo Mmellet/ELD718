@@ -14,6 +14,17 @@ tags: [
 
 Cette page référence les documentations utiles au cours sur l'usage des outils. 
 
+Index : 
+
+- [Hypothesis](https://mmellet.github.io/ELD718/documentation/#hypothesis)
+- [Markdown](https://mmellet.github.io/ELD718/documentation/#markdown)
+- [Pandoc](https://mmellet.github.io/ELD718/documentation/#pandoc)
+- [Raccourcis clavier](https://mmellet.github.io/ELD718/documentation/#raccourcis-clavier)
+- [Scribus](https://mmellet.github.io/ELD718/documentation/#scribus)
+- [Stylo](https://mmellet.github.io/ELD718/documentation/#stylo)
+- [Zotero](https://mmellet.github.io/ELD718/documentation/#zotero)
+
+
 -------------------------
 
 ### Raccourcis clavier 
@@ -94,7 +105,10 @@ Panneau Propriété : F2
 -------------------------
 -------------------------
 
-<!--
+## Pandoc 
+
+- [Atelier](https://mmellet.github.io/ELD718/slides/Seance-6.html#/6)
+
 ### Commandes Terminal 
 
 #### Navigation 
