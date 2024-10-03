@@ -21,7 +21,7 @@ title: Modalités d'évaluation
 
 #### Attentes selon des outils
 
-- [Scribus](https://mmellet.github.io/ELD718/doc/scibus.pdf)
+- [Scribus](https://mmellet.github.io/ELD718/doc/scribus.pdf)
 - [Stylo](https://mmellet.github.io/ELD718/doc/stylo.pdf)             
 - [Pandoc](https://mmellet.github.io/ELD718/doc/pandoc.pdf)
 
