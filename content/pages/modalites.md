@@ -19,7 +19,11 @@ title: Modalités d'évaluation
 <a href="https://mmellet.github.io/ELD718/slides/Travail-mi-session.html" target="_blank">ouvrir dans mon navigateur</a>
 </div>
 
+#### Attentes selon des outils
 
+- [Scribus](https://mmellet.github.io/ELD718/doc/scibus.pdf)
+- [Stylo](https://mmellet.github.io/ELD718/doc/stylo.pdf)             
+- [Pandoc](https://mmellet.github.io/ELD718/doc/pandoc.pdf)
 
 ### Travail final 
 *présentation lors de la séance 9*
