@@ -17,6 +17,7 @@ Cette page référence les documentations utiles au cours sur l'usage des outils
 Index : 
 
 - [Hypothesis](https://mmellet.github.io/ELD718/documentation/#hypothesis)
+- [Github](https://mmellet.github.io/ELD718/documentation/#github)
 - [Markdown](https://mmellet.github.io/ELD718/documentation/#markdown)
 - [Pandoc](https://mmellet.github.io/ELD718/documentation/#pandoc)
 - [Raccourcis clavier](https://mmellet.github.io/ELD718/documentation/#raccourcis-clavier)
@@ -149,6 +150,10 @@ Panneau Propriété : F2
 
 --------------------
 ------------------
+
+### Github
+
+- [Atelier Github](https://mmellet.github.io/ELD718/slides/Seance-7.html#/5)
 
 <!--
 ## Commandes Bash
