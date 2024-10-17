@@ -1,0 +1,1087 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD718 - Édition numérique - A2024</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    .batman {
+      background-color: #d7d9f2;
+    }
+
+    .flash {
+      background-color: #9de2c8dc;
+    }
+
+    .pouf {
+      background-color: #e29dcbdc;
+    }
+
+    table {
+      border: 2px solid rgb(140 140 140);
+      font-family: sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+    }
+
+
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+  </style>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD718 - Automne 2024 - Margot Mellet</div>
+      <section data-background-image="media/fragment.jpg" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD718 | Édition numérique
+
+
+          </h2>
+          <h3>17 octobre : Architecture d'information, </br>le livre entre document et data</h3>
+        </div>
+
+
+
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Indexation du savoir</h3>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/mundaneum.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Le projet Mundaneum</p>
+
+            <ul>
+              <li>Centre d'archives mondial</li>
+              <small>de Paul Otlet et Henri La Fontaine, 1898</small>
+              <li>Réunion de l'OIB et du RBU de 1895</li>
+
+              <small>Office International de Bibliographie et Répertoire Bibliographique Universel</small>
+              <li>Organisation des connaissances</li>
+              <small>corpus de 18 millions de fiches bibliographiques</small>
+              </br> <small>selon un système de classement (CDU) et de disposition physique (meubles-fichiers)</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Le projet Mundaneum
+              </br><small>philosophie</small></p>
+
+            <ul>
+              <li>Rêve de bibliothèque universelle</li>
+              <small>Bibliothèque de Babel, Projet Gutenberg, Wikipédia, etc.</small>
+              <li>Visée pacifiste de science ouverte</li>
+
+              <small><i>Essai de bibliographie de la paix</i>, 1891</small>
+              <li>Structuration et diffusion à l'international des connaissances</li>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+
+            <p>
+              « Rassembler et classer les savoirs du monde relève d’un projet global qui se construit dans le contexte
+              spécifique des mouvements pour la paix, de la fondation de la Société des Nations (SDN) et des deux
+              guerres mondiales. »
+              <small></br>(Schafer, 2013)</small>
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/tiroir.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Le projet Mundaneum
+              </br><small>contribution aux standards</small></p>
+
+            <ul>
+              <li>Classification décimale universelle (CDU, 1905)</li>
+              <small>construit à partir de la Classification décimale de Dewey, 1876 (CDD)</small>
+              <li>Norme des fiches bibliographiques</li>
+              <small>125 x 75 mm</small>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/mundaneum2.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Le projet Mundaneum
+              </br><small>préfiguration de la culture numérique</small></p>
+
+            <ul>
+              <li>Indexation des savoir selon un système partagé</li>
+              <li>Méthodes de consultation et accès multiples</li>
+              <small>entrées par noms, thématiques, titres</small>
+              </br><small>« Internet de papier »</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/reseau.jpg" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Le pont mondial
+
+          </div>
+        </section>
+
+        <section data-background-image="media/otlet.jpg" data-background-size="1300px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Le projet Mundaneum
+              </br><small>suites et héritages</small></p>
+
+            <ul>
+              <li><a href="https://hyperotlet.huma-num.fr/site/">HyperOtlet</a></li>
+              <small>encyclopédie documentaire sur l'histoire de la documentation</small>
+              <li><a href="https://hyperotlet.huma-num.fr/otletosphere/">OtletoSphère</a></li>
+              <small>cartographie relationnelle des travaux d'Otlet</small>
+              <li><a href="https://cosma.arthurperret.fr/">Cosma</a>, outil de visualisation des liens (Perret 2022)
+              </li>
+              <small><a href="https://cosma.arthurperret.fr/glossaire-indexation.html">exemplaire d'un
+                  glossaire</a></small>
+            </ul>
+          </div>
+        </section>
+
+
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Identités du livre</h3>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/fragment.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">identifiant pérenne : chaîne de caractères alphanumériques pour
+              renseigner la ressource et/ou son emplacement.</p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/fragment.jpg" data-background-size="1600px">
+          <div id="fondop2">
+            <h5>Dépôt légal</h5>
+            <ul>
+              <li><i>Loi sur Bibliothèques et Archives nationales du Québec</i></li>
+              <small>dépôt de 2 exemplaires par l'éditeur dans les 7 jours après publication</small>
+
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/fragment.jpg" data-background-size="2200px" background-color="#21211c">
+          <div id="fondop2">
+            <h5><i>International Standard Book Number</i></h5>
+            <ul>
+              <li>Numéro international normalisé du livre, 1970</li>
+              <small>identifier de manière unique chaque édition de chaque livre publié</small>
+              </br> <small>pour les publications en série : ISSN et e-ISSN pour la presse numérique</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/isbn.jpg" data-background-size="2000px">
+          <div id="fondop2">
+            <h5><i>International Standard Book Number</i>
+              </br><small>composition</small></h5>
+            <ul>
+              <li class="fragment">3 chiffres attribués <i>Bookland</i> : 978</li>
+              <li>groupe linguistique</li>
+              <small>2 pour les espaces francophones</small>
+              <li>numéro d'éditeur</li>
+              <small>court si éditeur à grande publication annuelle</small>
+              </br><small>07 pour Gallimard ; 925226 pour Poètes de brousse</small>
+              <li>numéro de publication</li>
+              <small>attribué par l'éditeur</small>
+              <li>clef de contrôle</li>
+            </ul>
+    </div>
+    </section>
+
+    <section data-background-image="media/isbn.png" data-background-size="1600px">
+      <div id="fondop2">
+        <h5><i>International Standard Book Number</i>
+          </br><small>fonctionnement</small></h5>
+        <ul>
+          <li>non-obligatoire au Canada</li>
+          <small>nécessaire pour le CIP</small>
+          <li>recommandé pour l'auto-édition</li>
+          <li>disponible via des agences d'ISBN</li>
+          <small>comme la BAnQ</small>
+        </br> <small>délai d'un mois + possibilité de refus</small>
+        </ul>
+  </div>
+  </section>
+
+  <section data-background-image="media/" data-background-size="1600px">
+    <div id="fondop2">
+      <p style="font-variant: small-caps;">Identifiants pour les objets numériques</p>
+    </div>
+  </section>
+
+  <section data-background-image="media/url.png" data-background-size="1800px">
+    <div id="fondop2">
+      <h5>URI</h5>
+
+      <ul>
+        <li><i>Uniform Resource Identifier</i></li>
+        <small>culture du World Wide Web</small>
+        <li>deux types : URL et URN</li>
+        <small>URL : type <i>locator</i> pour l'emplacement</small>
+        </br><small>URN : type <i>name</i> pour le nom</small>
+
+      </ul>
+    </div>
+  </section>
+
+
+  <section data-background-image="media/doi.png" data-background-size="800px">
+    <div id="fondop2">
+      <h5>DOI</h5>
+
+      <ul>
+        <li><i>Digital Object Identifier</i></li>
+        <small>alternative au URI pour régler le problème des URLs changeants</small>
+      </br> <small>initié au nom de l'Association of American Publishers</small>
+        </br><small>développé par l'agence d'enregistrement des DOI : Crossref</small>
+      </ul>
+    </div>
+  </section>
+
+  <section data-background-image="media/doi2.png" data-background-size="2200px">
+    <div id="fondop2">
+      <h5>DOI
+        </br><small>composition</small></h5>
+
+
+    </div>
+  </section>
+
+  <section data-background-image="media/" data-background-size="1600px">
+    <div id="fondop2">
+      <h5>DOI
+        </br><small>fonctionnement</small></h5>
+      <ul>
+        <li>Organisation autorisée</li>
+        <small>CrossRef pour les publications académiques</small>
+        </br><small>DataCite pour tout type de ressources</small>
+        <li>Frais d'abonnement variable</li>
+        <small>250-300 $/an</small>
+        </br><small>1 $/DOI article ; 2-3$/DOI livre</small>
+      </ul>
+    </div>
+  </section>
+
+  <section data-background-image="media/ark.png" data-background-size="800px">
+    <div id="fondop2">
+      <h5>ARK
+      </h5>
+      <ul>
+        <li><i>Archival Resource Key</i></li>
+        <small>développé par la California Digital Library</small>
+      </ul>
+    </div>
+  </section>
+
+  <section data-background-image="media/" data-background-size="2200px">
+    <div id="fondop2">
+      <h5>ARK
+        </br><small>composition</small></h5>
+      <p style="font-variant: small-caps;">https://NMA/ark:/NAAN/Nom[Qualificatif]</p>
+      <ul>
+        <li><i>Name Assigning Authority Number</i></li>
+        <small>obligatoire - identifiant unique de l'organisation</small>
+        <li><i>Name Mapping Authority</i></li>
+        <small>optionnel</small>
+        <li>Qualificatif</li>
+        <small>optionnel - variatne de langues, versions, formats</small>
+
+      </ul>
+    </br>
+      </br><small>exemple : https://gallica.bnf.fr/ark:/12148/bpt6k1523583v/f227.item</small>
+    </div>
+  </section>
+
+
+  <section data-background-image="media/fragment.jpg" data-background-size="1600px">
+    <div id="fondop2">
+      <p style="font-variant: small-caps;">Autres systèmes
+      </p>
+      <ul>
+        <li>ASIN ou <i>Amazon Standard Identification Number</i></li>
+        <small>utilisé et produit par Amazon</small>
+        <li>LCCN ou <i>Library of Congress Control Number</i></li>
+        <small>par la Bibliothèque du Congrès pour catalogage</small>
+        <li>ISMN ou <i>International Standard Music Number</i></li>
+        <small>partitions musicales, livres musicaux</small>
+      </ul>
+    </div>
+  </section>
+
+  <section data-background-image="media/" data-background-size="1600px">
+    <div id="fondop2">
+      <p style="font-variant: small-caps;">Choix du système
+      </p>
+      <ul>
+        <li>certains obligatoires</li>
+        <small>comme le dépôt légal</small>
+        <li>besoins de centralisation</li>
+        <small>DOI parce que géré par des organismes accrédités est plus centralisé</small>
+        </br><small>ARK est libre, auto-hébergé, moins centralisé</small>
+        <li>type de services</li>
+        <small>ARK pour institutions culturelles (archives)</small>
+        </br><small>DOI pour publications scientifiques</small>
+        <li>prévisions</li>
+        <small>ARK souple et extensible / DOI rigide et immobile</small>
+      </ul>
+    </div>
+  </section>
+
+  <section data-background-image="media/" data-background-size="1600px">
+    <div id="fondop2">
+      <p style="font-variant: small-caps;">Quel système ?
+      </p>
+      <ul>
+        <li>2-07-040984-4</li>
+        <small class="fragment">ISBN-10</small>
+        <li>ark:/13030/tf5x49p8qf</li>
+        <small class="fragment">ARK</small>
+        <li>978-2-07-040984-1</li>
+        <small class="fragment">ISBN-13</small>
+        <li>10.1038/nature12394</li>
+        <small class="fragment">DOI</small>
+        <li>urn:isbn:9780143038092</li>
+        <small class="fragment">URI-URN</small>
+        
+        <li>B000002U9A</li>
+        <small class="fragment">ASIN</small>
+      </ul>
+    </div>
+  </section>
+
+
+
+  </section>
+
+
+  <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+    <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+      <div id="fondop2">
+        <h3>La structuration et la donnée</h3>
+        <p style="font-variant: small-caps;">pour la description du contenu</p>
+      </div>
+    </section>
+
+    <section data-background="media/fragment.jpg" data-background-size="2000px">
+      <div id="fondop2">
+<p style="font-variant: small-caps;">Notice bibliographique</p>
+<ul>
+<li>description de manière unique un objet et le lieu de consultation</li>
+<small>à l'origine une fiche</small>
+</br><small>titre, auteur, date, ISBN, cote, etc.</small>
+</br><small>normalisation selon les normes ISO</small>
+</ul>
+
+</div>
+    </section>
+   
+    <section data-background="media/rdf.png" data-background-size="1000px">
+      <div id="fondop2">
+<p style="font-variant: small-caps;">RDF</p>
+<ul>
+<li><i>Resource Description Framework</i></li>
+<small>modèle de données pour représenter/décrire les ressources sur le Web</small>
+<li>Fonctionnement sur le triplet</li>
+<small>1 triplet = un sujet + prédicat + objet</small>
+<li>Modèle flexible, extensible et interopérable</li>
+<small>parfois écrit en XML</small>
+</ul>
+
+</div>
+    </section>
+
+    <section data-background="media/rdf2.png" data-background-size="1400px">
+      <div id="fondop2">
+<p style="font-variant: small-caps;">RDF
+</br><small>exemple : <i>Le ciel de Bay City</i> de C. Mavrikakis</small></p>
+<ul>
+<li>Sujet = ressource à décrire</li>
+<small><pre><code><http://example.org/books/1></code></pre></small>
+<li>Prédicat = type de propriété</li>
+<small><pre><code><http://purl.org/dc/elements/1.1/title></code></pre></small>
+<li>Objet = valeur de la propriété</li>
+<small>"Le ciel de Bay City" </small>
+</ul>
+</br><small>résultat : <pre><code><http://example.org/books/1> <http://purl.org/dc/elements/1.1/title> "Le ciel de Bay City".</code></pre></small>
+
+</div>
+    </section>
+
+    <section data-background="media/microdonnees.png" data-background-size="1400px">
+      <div id="fondop2">
+<p style="font-variant: small-caps;">Microdonnée</p>
+<ul>
+<li>Fonctionnalité du HTML5</li>
+<small>encoder les métadonnées des pages web</small>
+</ul>
+
+</div>
+    </section>
+
+    <section data-background="media/oai.png" data-background-size="1500px">
+      <div id="fondop2">
+<p style="font-variant: small-caps;">OAI-PMH</p>
+<ul>
+<li><i>Open Archives Initiative Protocol for Metadata Harvesting</i></li>
+<small>par Open Archive Iniative</small>
+<li>Protocole informatique pour récolter les métadonnées</li>
+<small>ouvert, flexible, interopérable</small>
+<li>Améliorer les informations et les recherches dans des systèmes de documentation</li>
+</ul>
+
+</div>
+    </section>
+
+    <section data-background="media/dublincore.svg" data-background-size="1500px">
+      <div id="fondop2">
+<p style="font-variant: small-caps;">Dublin Core (dc)</p>
+<ul>
+<li>Vocabulaire du Web sémantique pour description des documents numériques</li>
+<small>par la Dublin Core Metadata Iniative (DCIM)</small>
+<li>Utilisé par les standards de structuration des métadonnées</li>
+<small>Microdonnée, RDF, OAI-PMH (obligatoire), XML, etc.</small>
+</ul>
+
+</div>
+    </section>
+
+    <section data-background="media/dc.png" data-background-size="1500px">
+      <div id="fondop2">
+<p style="font-variant: small-caps;">Dublin Core (dc)
+</br><small>Composition</small>
+</p>
+<ul>
+  <li><i>Dublin Core element set</i> : 15 éléments métadonnées</li>
+<small>pour le contenu : titre, description, source, langue, relation, couverture</small>
+</br><small>pour la propriété intellectuelle : créateur, contributeur, éditeur, gestion des droits</small>
+</br><small>pour l'instanciation : date, type, format, identifiant</small>
+<li><i>Dublin Core metadata terms</i> : éléments additionnels</li>
+<small>catégories : résumé, format de fichier, collection, etc.</small>
+</br><small>qualificatifs : nom de famille du créateur, etc. </small>
+
+</ul>
+
+</div>
+    </section>
+
+    <section data-background="media/drucker.jpg" data-background-size="1600px">
+      <div id="fondop2">
+<p style="font-variant: small-caps;">Réflexion et ouverture sur la donnée</p>
+<p>
+  « Croire que les données sont intrinsèquement quantitatives </br>— évidentes, neutres sur le plan des valeurs et indépendantes de l’observateur — exclut la possibilité de les concevoir comme qualitatives, co-dépendamment constituées — en d’autres termes, de reconnaître que data sont des captas […] Je suggère que nous repensions fondamentalement les données comme des captas en termes d’ambiguïté plutôt que de certitude, et que nous trouvions des moyens d’exprimer graphiquement la complexité de l’interprétation. » (Drucker, 2011)
+</p>
+
+</div>
+    </section>
+
+    <section data-background="media/fragment.jpg" data-background-size="2000px">
+      <div id="fondop2">
+<p style="font-variant: small-caps;">La recommandation et la donnée</p>
+<p>
+  « [...] les données qui peuvent être identifiées par un algorithme sont, par nature, des données standardisées, c’est-à-dire des données qui sont formatées et prêtes à être utilisées par l’algorithme, et ce, sans intervention humaine. Cela implique, par exemple, que les données erronées, ou absentes, d’un titre de livre sur une plateforme en ligne, feront en sorte que le titre en question ne sera pas sélectionné par l’algorithme. » (Labbé, 2015)
+</p>
+
+
+</div>
+    </section>
+
+    <section data-background="media/chute.png" data-background-size="1500px">
+      <div id="fondop2">
+<p style="font-variant: small-caps;">Les méthodes de recommandation
+
+</p>
+<ul>
+  <li><i>Collaborative Filtering</i></li>
+  <small>regrouper les profils selon des patterns de préférence</small>
+  <li><i>Content-based Filtering</i></li>
+  <small>utilisation des métadonnées communes pour recommandation</small>
+</ul>
+
+</div>
+    </section>
+
+  </section>
+
+
+
+  <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+    <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+      <div id="fondop2">
+        <h3><i class="material-icons">design_services</i> Leaf Writer</h3>
+        <p>Édition XML et RDF
+        </p>
+        <small><a href="https://leaf-writer.leaf-vre.org/">se créer un compte avec GitHub</a></small>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/leaf.png" data-background-size="2000px">
+      <div id="fondop2">
+<p style="font-variant: small-caps;">Leaf-Writer</p>
+<ul>
+  <li>Éditeur de texte en ligne de documents sensibles à des schémas</li>
+<small>comme le XML-TEI</small>
+<li>Ouvert et en libre accès</li>
+<small><a href="https://gitlab.com/calincs/cwrc/leaf-writer/leaf-writer">Répertoire Git de l'outil</a></small>
+<li>Outil développé dans le cadre du portail <a href="https://lincsproject.ca/">LINCS</a></li>
+<small>Guelph, Brown, Marin and Stacey, 2020</small>
+
+</ul>    
+</div>
+    </section>
+   
+    <section data-background-image="media/leaf-choix.png" data-background-size="1800px">
+      <div id="fondop2">
+<p style="font-variant: small-caps;">Exercice d'édition enrichie de <i>Mrs Dalloway in Bond Street</i></p>
+<ul>
+  <li>Ouvrir échantillons</li>
+<small>textes déjà préparés en XML</small>
+<li>Double-clic sur <i>Virginia Woolf, "Mrs Dalloway in Bond Street" (prose)</i></li>
+
+</ul>    
+</div>
+    </section>
+
+    <section data-background-image="media/leaf-interface.png" data-background-size="1800px">
+      <div id="fondop2">
+<p style="font-variant: small-caps;">Décrypter l'interface</p>
+<ul>
+  <li>2 vues</li>
+<small>vue de montage pour l'édition</small>
+</br><small>vue de visualisation pour le rendu</small>
+<li>3 espaces</li>
+<small>centre : texte et édition avec outils</small>
+</br><small>gauche : table des matières, balisage, entités encodées</small>
+</br><small>droite : rendus xml modifiable, rendu visuel, schéma de validation continue</small>
+<li>Sauvegarde et Export</li>
+<small>HTML, XML et Md.</small>
+</ul>    
+</div>
+    </section>
+
+    <section data-background-image="media/leaf-tags.png" data-background-size="1800px">
+      <div id="fondop2">
+<p style="font-variant: small-caps;">Identifier les entités nommées</p>
+<ul>
+  <li><i class="material-icons">sell</i> Tags</li>
+<small>balises TEI-XML éligibles</small>
+<li><i class="material-icons">person</i> Personne</li>
+<small>balise personne (réelle ou non)</small>
+
+<li><i class="material-icons">location_on</i> Lieu</li>
+
+<li><i class="material-icons">groups</i> Organisation ou société</li>
+
+<li><i class="material-symbols-outlined">book_4</i> Titre ou texte</li>
+
+<li><i class="material-symbols-outlined">takeout_dining</i> Nom d'usage, étiquette</li>
+<small>expression régulière ou redondante</small>
+<li><i class="material-symbols-outlined">format_quote</i> Citation</li>
+<li><i class="material-symbols-outlined">today</i> Date</li>
+
+</ul>    
+</div>
+    </section>
+
+    <section data-background-image="media/leaf-tags.png" data-background-size="1800px">
+      <div id="fondop2">
+<p style="font-variant: small-caps;">Identifier les interventions sur le texte</p>
+<ul>
+  <li><i class="material-symbols-outlined">draft</i> Annotation</li>
+<small>remarque, note de recherche</small>
+<li><i class="material-icons">warning</i> Correction apportée</li>
+
+<li><i class="material-icons">key</i> Mot-clef</li>
+<small>thématique ou marqueur redondant</small>
+
+<li><i class="material-icons">link</i> Lien ou URL</li>
+
+<li><i class="material-symbols-outlined">glyphs</i> Traduction</li>
+<small>doit prendre en compte une div/section entière</small>
+</br><small>conseil : afficher les balises avec l'option <i class="material-symbols-outlined">double_arrow</i></small>
+</ul>    
+</div>
+    </section>
+
+    <section data-background-image="media/" data-background-size="1800px">
+      <div id="fondop2">
+    <p style="font-variant: small-caps;">À éditer</p>
+    <ul>
+    <li>3 <i class="material-icons">person</i> Personne</li>
+    <small>2 fictionnelles : Mrs Dalloway et Shakespeare (avec person type + certainty)</small>
+    </br><small>une réelle : Virginia Woolf (person type + certainty + role)</small>
+    
+    <li>Conseil : si vous ne parvenez pas à les trouver via le module </br> allez les chercher directement sur <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a> </br>ou essayez plusieurs graphies (minuscule)</li>
+    
+    </ul>    
+    </div>
+    </section>
+    <section data-background-image="media/" data-background-size="1800px">
+      <div id="fondop2">
+<p style="font-variant: small-caps;">À éditer</p>
+<ul>
+  <li>4 <i class="material-icons">location_on</i> Lieu</li>
+  <small>1 ville, 1 quartier, 1 rue, 1 monument</small>
+
+  <li>1 <i class="material-icons">groups</i> Organisation ou société</li>
+<small>the <i>Parliament</i></small>
+
+</ul>    
+</div>
+</section>
+
+<section data-background-image="media/" data-background-size="1800px">
+  <div id="fondop2">
+<p style="font-variant: small-caps;">À éditer</p>
+<ul>
+<li>2 <i class="material-symbols-outlined">book_4</i> Titre ou texte</li>
+<small>le titre du texte (certainty + level)</small>
+</br><small>Les sonnets de Shakespeare (certainty + level)</small>
+
+</ul>    
+</div>
+</section>
+
+<section data-background-image="media/" data-background-size="1800px">
+  <div id="fondop2">
+<p style="font-variant: small-caps;">À éditer</p>
+<ul>
+<li>6 <i class="material-icons">sell</i> Tags</li>
+<small>2 balises forename/prénom</small>
+</br><small>1 balise surname/surnom (Milly)</small>
+</br><small>1 balise abbréviation</small>
+</br><small>2 balises roleName/statut (King/Queen)</small>
+</ul>    
+</div>
+</section>
+
+<section data-background-image="media/" data-background-size="1800px">
+  <div id="fondop2">
+<p style="font-variant: small-caps;">À éditer</p>
+<ul>
+  <li>1 <i class="material-symbols-outlined">draft</i> Annotation</li>
+  <small>libre</small>
+  <li>1 <i class="material-icons">warning</i> Correction apportée</li>
+  <small>BY par by</small>
+
+  
+  <li>1 <i class="material-symbols-outlined">glyphs</i> Traduction</li>
+  </ul>    
+</div>
+</section>
+
+<section data-background-image="media/" data-background-size="1800px">
+  <div id="fondop2">
+<p style="font-variant: small-caps;">À observer</p>
+<ul>
+<li>la validation tout au long de l'édition</li>
+<li>le RAW XML pour voir le changement/ajout de balises</li>
+<li>la liste des entités</li>
+<li>la structure du balisage</li>
+</ul>    
+</div>
+</section>
+
+    <section data-background-image="media/chute.png" data-background-size="1200px">
+      <div id="fondop2">
+<p style="font-variant: small-caps;">Pour aller plus loin</p>
+<ul>
+  <li><a href="https://lincsproject.ca/docs/tools/leaf-writer/leaf-writer-documentation">Documentation de Leaf-Writer</a></li>
+</ul>    
+</div>
+    </section>
+
+  </section>
+  <!--
+      <section data-background-image="media/chute.png" data-background-size="1300px">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Pour la semaine prochaine</p>
+          <p><a href="">Création d'un compte Leaf</a>
+          </p>
+
+        </div>
+      </section>
+      -->
+
+  <section data-background-image="media/chute.png" data-background-size="1600px" data-background-color="#f1eded">
+    <div id="fondop2">
+      <p>Annotation pour la semaine prochaine : <a href="https://via.hypothes.is/https://journals.openedition.org/revuehn/371">Pour une théorie de l’éditorialisation (Vitali-Rosati 2020)</a></p>
+    </div>
+
+
+  </section>
+
+
+  </div>
+
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+      // Optional reveal.js plugins
+      dependencies: [{
+          src: 'lib/js/classList.js',
+          condition: function () {
+            return !document.body.classList;
+          }
+        },
+        {
+          src: 'plugin/markdown/marked.js',
+          condition: function () {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: 'plugin/markdown/markdown.js',
+          condition: function () {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: 'plugin/highlight/highlight.js',
+          async: true,
+          condition: function () {
+            return !!document.querySelector('pre code');
+          },
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        },
+        {
+          src: 'plugin/zoom-js/zoom.js',
+          async: true
+        },
+        {
+          src: 'plugin/notes/notes.js',
+          async: true
+        }
+      ]
+    });
+
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+
+</body>
+</section>
+
+</html>
