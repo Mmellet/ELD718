@@ -18,6 +18,7 @@ Index :
 
 - [Hypothesis](https://mmellet.github.io/ELD718/documentation/#hypothesis)
 - [Github](https://mmellet.github.io/ELD718/documentation/#github)
+- [Leaf-Writer](https://mmellet.github.io/ELD718/documentation/#leaf-writer)
 - [Markdown](https://mmellet.github.io/ELD718/documentation/#markdown)
 - [Pandoc](https://mmellet.github.io/ELD718/documentation/#pandoc)
 - [Raccourcis clavier](https://mmellet.github.io/ELD718/documentation/#raccourcis-clavier)
@@ -154,6 +155,10 @@ Panneau Propriété : F2
 ### Github
 
 - [Atelier Github](https://mmellet.github.io/ELD718/slides/Seance-7.html#/5)
+
+### Leaf-Writer
+
+- [Atelier Leaf-Writer](https://mmellet.github.io/ELD718/slides/Seance-8.html#/4)
 
 <!--
 ## Commandes Bash
