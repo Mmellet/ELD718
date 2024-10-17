@@ -1,6 +1,9 @@
 
 Bienvenu sur le site du cours **ELD718|Édition numérique** de l'Université de Sherbrooke.
 
+<iframe src="https://mmellet.github.io/ELD718/slides/theories.html" title="description"  height="200" width="100" allowfullscreen="allowfullscreen"></iframe>
+
+
 Le cours se déroule officiellement le jeudi de 18h30 à 21h20 du 29 août au 5 décembre au Campus de Longueuil (L-1-6650). 
 
 Le plan du cours est disponible [ici](./doc/ELD718-A24-plan.pdf).
