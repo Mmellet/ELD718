@@ -1,0 +1,1043 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD718 - Édition numérique - A2024</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    .batman {
+      background-color: #d7d9f2;
+    }
+
+    .flash {
+      background-color: #9de2c8dc;
+    }
+
+    .pouf {
+      background-color: #e29dcbdc;
+    }
+
+    table {
+      border: 2px solid rgb(140 140 140);
+      font-family: sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+    }
+
+
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+  </style>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD718 - Automne 2024 - Margot Mellet</div>
+      <section data-background-image="media/anthologie.jpg" data-background-size="2400px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD718 | Édition numérique
+
+
+          </h2>
+          <h3>31 octobre : Le modèle anthologique : édition critique et éditorialisation</h3>
+        </div>
+
+
+
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>L'anthologie et la culture numérique</h3>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/anthologie.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">
+              L'anthologie comme « forme et format par excellence de la
+              civilisation numérique »
+              <small></br>(Doueihi, 2011)</small>
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/anthologie.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">L'anthologie
+              </br>
+              <small>Définition, TLFi</small></p>
+            <ul>
+              <li>Nom de plusieurs recueils de courtes pièces choisies (comparées à des fleurs) de divers poètes
+                lyriques <small>ANTIQ. GR.</small> </li>
+              <li>Recueil de textes littéraires choisis <small>Courant</small> </li>
+              <small> Anthologie de la poésie allemande, de la prose française; figurer dans une anthologie</small>
+              <li>Recueil de ce qu'il y a de plus typique dans un ensemble <small>P. ext.</small> </li>
+              <small>Anthologie des thèmes, des contradictions</small>
+            </ul>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">
+              La compilation comme geste éditorial
+              </br><small>construire un corpus représentatif d'une culture</small>
+              </br><small>anthologie et dossier thématique : formes de compilations qui suivent une ligne
+                éditoriale</small>
+            </p>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/musemedusa.jpg" data-background-size="1600px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Étude de cas : <a href="https://musemedusa.com/"><i>MuseMedusa</i></a>,
+              2012</p>
+
+            <ul>
+              <li>Dossier thématique autour d'un mtyhe ou d'une figure culturelle</li>
+              <li>Articulation recherche et création</li>
+              <small>travaux académiques, entretiens, créations multimédiales</small>
+              <li>Compilation de plusieurs voix et perspectives</li>
+            </ul>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/anthologie2.jpg" data-background-size="1600px">
+          <div id="fondop2">
+
+
+            <p style="font-variant: small-caps;">Étude de cas : l'Anthologie grecque</p>
+
+
+            <ul>
+              <li>4 000 épigrammes (16 livres) issues de 16 siècles de littérature</li>
+              <small>forme changeante de l'épigramme</small>
+              <li>325 auteurs</li>
+              <li>Histoire éditoriale complexe</li>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/anthologie2.jpg" data-background-size="1600px">
+          <div id="fondop2">
+
+
+            <p style="font-variant: small-caps;">L'Anthologie grecque
+              </br><small>histoire éditoriale</small></p>
+
+
+            <ul>
+              <li>Différentes compilations</li>
+              <small><i>Codex Palatinus 23</i> (940 apr. J.-C.)</small>
+              </br><small>Anthologie de Céphalas (900 apr. J.-C.)</small>
+              </br><small>Courones de Méléagre (I<sup>er</sup> siècle av. J.-C.)</small>
+              </br><small>Couronne de Philippe (I<sup>er</sup> siècle apr. J.-C.)</small>
+              </br><small>Anthologie de Diogénien (II<sup>ème</sup> siècle apr. J.-C.)</small>
+              </br><small>Cycle d'Agathias (VI<sup>ème</sup> siècle apr. J.-C.)</small>
+
+              <li>Anthologie grecque = Codex Palatinus 23 + Appendix Planudea</li>
+              <small>Appendix Planudea = Anthologie de Planude + Anthologie de Céphalas</small>
+              </br><small>Anthologie de Céphalas = Couronne de Méléagre + Couronne de Philippe + Anthologie de Diogénien
+                + Cycle d'Agathias</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/anthologie.jpg" data-background-size="2000px">
+          <div id="fondop2">
+
+
+            <p style="font-variant: small-caps;">Modèle du corpus</p>
+            <p>
+              « Ce que l’on appelle Anthologie grecque n’est en réalité pas un objet clos mais une mise en relation
+              de différents textes et contextes, produisant de nombreuses versions d’une littérature. Le défi d’une édition est alors celui de parvenir à rassembler ces multiples versions pour unifier, au moins
+              dans la forme, un patrimoine anthologique. »
+              <small></br>(Verstraete, 2024)</small>
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/anthologie2.png" data-background-size="1800px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Étude de cas : <a href="https://anthologiagraeca.org/">Le projet Anthologie grecque</a></p>
+            <ul>
+              <li>2014 - <a href="https://ecrituresnumeriques.ca/fr/">CRCEN</a> (Bouchard, Raschle, Vitali-Rosati)</li>
+               </ul>
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/anthologie.png" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">État des lieux de l'anthologie</p>
+  
+            <ul>
+              <li>Édition des Belles Lettres (1939-2019)</li>
+            <li>Bibliothèque en ligne : <a href="http://www.perseus.tufts.edu/hopper/">Perseus.tufts</a></li>
+            </ul>
+            <p style="font-variant: small-caps;">Manque d'indexation & traduction</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/spip.png" data-background-size="1800px">
+          <div id="fondop2">
+
+<p style="font-variant: small-caps;">Début du projet : <a href="http://anthologiegrecque.org/ap/"><i>Anthologie Palatine</i></a></p>
+
+
+            <ul>
+              <li>Publication des épigrammes sur un SPIP</li>
+              <small>système de gestion de contenus pour générer des sites web</small>
+              <li>Texte sans structuration</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/anthologie2.png" data-background-size="1800px">
+          <div id="fondop2">
+
+<p style="font-variant: small-caps;">Vers une plateforme d'édition numérique collaborative</p>
+
+
+            <ul>
+              <li>Page épigramme</li>
+              <small>texte grec depuis Perseus</small>
+            </br><small>image du manuscrit Codex Palatinus 23</small>
+          </br><small>traductions officielles et spontanées</small>
+        </br><small>métadonnes : auteur, ville, mots-clefs</small>
+      </br><small>compléments : scholie, commentaires</small>
+    </br><small>alignement des traductions</small>
+    </br><small>références : internes et externes</small>
+  </br><small>suivi des modifications</small>
+
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/anthologie-parcours.png" data-background-size="1800px">
+          <div id="fondop2">
+
+<p style="font-variant: small-caps;">Déclainaison du collaboratif</p>
+
+
+            <ul>
+              <li>Parcours de lecture dans la plateforme <a href="https://pop.anthologiegrecque.org/#/">POP Anthologie grecque</a><sup>caduc</sup></li>
+<small>disponibles sur la <a href="https://anthologiagraeca.org/keywords/">nouvelle plateforme</a></small>
+            </br><small>Plateforme Ouverte de Parcours d'imaginaires</small>
+            <li>Fonctionnalité du lien faible (ou référence externe)</li>
+            <small>référence libre et anachronique autour du topos</small>
+<li><a href="https://twitter.com/greekAnthology">Tweet Bot de l'Anthologie</a></li>
+            </ul>
+          </div>
+        </section>
+
+    
+        <section data-background-image="media/anthologie.jpg" data-background-size="2000px">
+          <div id="fondop2">
+
+<p style="font-variant: small-caps;">Édition anthologique</p>
+
+
+            <ul>
+            <li>Structure du corpus plutôt que de l'œuvre</li>  
+          <li>Ouverture à l'amateur</li>
+        
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/hyperroy1.png" data-background-size="1800px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Étude de cas : <a href="https://hyperroy.nt2.uqam.ca/">HyperRoy</a></p>
+            <ul>
+              <li>Publication du corpus de Gabrielle Roy</li>
+              <small>livres, correspondances et littérature scientifique</small>
+              <li>États des textes à partir des manuscrits</li>
+              <small>documentation de l'auteure, de l'écriture</small>
+              <li>Enrichissement des éditions</li>
+              <small>recherches actuelles</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/anthologie.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+
+            <p style="font-size: smaller;">
+              « Plus que toute autre production éditoriale, les anthologies renvoient constamment à la nature du
+              patrimoine, de sa constante redéfinition, réévaluation et réhabilitation lors de l’acte de transmission
+              qui est sa raison d’être. Ces questions sont d’autant plus pressantes que l’anthologie littéraire
+              entend préserver un patrimoine en l’élaguant, l’étendre en le laissant accessible, le résumer en
+              cherchant souvent à aiguiser la curiosité. Généralement œuvre d’un individu, parfois d’un groupe
+              restreint d’auteurs, elle renvoie au problème complexe de l’héritage, qui peut être accepté dans sa
+              totalité, dénoncé ou réorganisé au moyen de cessions partielles, de réemplois ou de rachats. »
+              <small></br>(Fraisse, 2017)</small>
+            </p>
+          </div>
+        </section>
+
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>L'éditorialisation : point de vue critique sur les nouvelles modalités éditoriales</h3>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1600px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">réponse au changement culturel/ontologique de l'édition</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;"><i>Editorialize</i>, 2000</p>
+
+            <p><i>to express an opinion in the form of an editorial</i></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="2200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Histoire institutionnelle
+            </br><small>Guyot, 2004</small></p>
+
+            <p>Méthologie pour l'analyse des conditions de production, circulation et mise en relation d'un
+              document numérique avec les environnements et les individus</p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="2200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Histoire institutionnelle
+            </br><small>Zacklad, 2005-2007</small></p>
+
+
+            <p style="font-size: smaller;">« doter ces supports [les documents] d'attributs spécifiques permettant de faciliter (i) </br> leur
+              gestion parmi d'autres supports, (ii) leur manipulation physique, condition d'une navigation
+              sémantique à l'intérieur du contenu sémiotique et enfin, </br>(iii) l'orientation des récepteurs. »
+              (<a href="https://archivesic.ccsd.cnrs.fr/sic_00001326">Zacklad 2005</a>)</p>
+
+            <p  style="font-size: smaller;">« [documentarisation éditoriale : ] distinguer différents types de documentarisation selon la
+              division du travail de publication. » (<a href="https://archivesic.ccsd.cnrs.fr/sic_00180185">Zacklad
+                2007</a>)</p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="2200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Histoire institutionnelle
+            </br><small>Bachimont, 2007</small></p>
+
+
+            <p style="font-size: 26;">« [...] l’indexation fine du contenu rendue possible pour le numérique
+              introduit un rapport
+              nouveau au contenu et au document. Alors que selon l’indexation traditionnelle l’enjeu est de
+              retrouver le ou les documents contenant l’information recherchée, l’indexation fine du contenu
+              permet de ne retrouver que les segments concernés par la recherche d’information et de
+              paramétrer l’usage de ces segments. [...] Devenant des ressources, ces segments sont remobilisés
+              pour la production d’autres contenus dont ils constituent les composants. La finalité n’est plus
+              de retrouver des documents, mais d’en produire de nouveaux, à l’aide des ressources retrouvées.
+              On passe ainsi de l’indexation pour la recherche à l’indexation pour la publication. Comme cette
+              dernière s’effectue selon des règles et des normes, on parlera plutôt d’éditorialisation, pour
+              souligner le fait que
+              les segments indexés sont enrôlés dans des processus éditoriaux en vue de nouvelles
+              publications. »<br> 
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/.jpg" data-background-size="2200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Histoire institutionnelle
+            </br><small>Vitali-Rosati et Wormser, 2008</small></p>
+
+
+            <ul>
+              <li>Laboratoire « Pratiques interdisciplinaires et
+                circulation du savoir : vers une éditorialisation des SHS », MSH Paris</li>
+                <li>Revue <i>Sens public</i></li>
+                <small>2013</small>
+                <li>Chaire de recherche du Canada sur les écritures numériques</li>
+                <small>2014</small>
+            </p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/anthologie.jpg" data-background-size="2000px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Éditorialisation et culture numérique</p>
+
+            <p style="font-size: 30;">« Davantage qu’un néologisme forgé pour marquer le passage au numérique, le
+              concept
+              d’éditorialisation vient répondre à des problématiques posées par ce nouveau modèle. Il est en
+              effet essentiel de souligner, au terme de ce travail de définition, à quel point la notion
+              d’éditorialisation peut changer notre manière d’habiter l’espace numérique. Parce qu’elle en
+              souligne la structure, l’éditorialisation nous donne la possibilité de comprendre l’espace
+              numérique et de comprendre le sens de nos actions dans cet espace : elle nous révèle les
+              rapports entre les objets, les dynamiques, les forces, les dispositifs de pouvoir, les sources
+              d’autorité. » (<a href="https://journals.openedition.org/revuehn/371">Vitali-Rosati 2020</a>)
+            </p>
+                </div>
+        </section>
+
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Discussion : <a href="https://via.hypothes.is/https://journals.openedition.org/revuehn/371">Pour une
+                théorie de l’éditorialisation (Vitali-Rosati 2020)</a></h3>
+          </div>
+        </section>
+  
+
+        <section data-background-image="media/" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Trois définitions</p>
+            <ul>
+              <li>Mutations des outils de l'édition vers une nouveau mode éditorial
+              </li>
+<small>définition restreinte</small>
+              <li>Changement de paradigme culturel</li>
+             <small>définition générale</small>
+              <li>Aspects technologiques, culturels et pratiques</li>
+           <small>définition philosophique</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/anthologie.jpg" data-background-size="2200px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Édition / Éditorialisation</p>
+
+
+            <p>« [L]a différence entre édition et éditorialisation n'est pas qu'une différence d'outils. Elle suggère
+              plutôt une différence culturelle : l'éditorialisation n'est pas notre façon de produire du savoir en
+              utilisant des outils numériques ; c'est notre façon de produire du savoir à l'époque du numérique, ou
+              mieux, dans notre société numérique.
+              » (Vitali-Rosati 2020)</p>
+
+
+          </div>
+        </section>
+
+
+
+        <section data-background="media/anthologie.jpg" data-background-size="2000px">
+
+          <div id="fondop2">
+
+            <p>« L'éditorialisation désigne l'ensemble des dynamiques qui produisent et
+              structurent l'espace numérique. Ces dynamiques sont les interactions des actions individuelles
+              et collectives avec un environnement numérique particulier. » (<a
+                href="https://journals.openedition.org/revuehn/371">Vitali-Rosati 2020</a>)</p>
+
+          </div>
+        </section>
+
+  
+        <section data-background="media/transcrire1.png" data-background-size="1800px">
+
+          <div id="fondop2">  <p style="font-variant: small-caps;">Étude de cas : <a href="https://transcrire.huma-num.fr/">Transcrire</a></p>
+              <ul>
+                  <li>Carnet d'ehtnologues du XIX<sup>e</sup> par <i>crowdsourcing</i></li>
+                  <small>pour adresser le limites de l'OCR</small>
+
+              </ul>
+          </div>
+      </section>
+
+
+
+
+      <section data-background="media/transcrire2.png" data-background-size="1800px">
+
+        <div id="fondop2"> <p style="font-variant: small-caps;">Étude de cas : <a href="https://transcrire.huma-num.fr/">Transcrire</a></p>
+              <ul>
+                  <li>Production collaborative des textes et du savoir</li>
+                  <small>flou entre spécialiste et amateur</small>
+                  <li>Accessibilté du patrimoine</li>
+                  <small>mission de conservation et diffusion</small>
+                  <li>Création d'un espace opérationnel pour la recherche</li>
+
+              </ul>
+          </div>
+      </section>
+
+
+    </section>
+
+
+
+    <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+      <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <h3>Système de données et commun éditorial</h3>
+         
+        </div>
+      </section>
+
+      <section data-background-image="media/api.svg" data-background-size="1800px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">API
+          </br><small>application programming interface</small></p>
+
+<p>ensemble de règles et de protocoles qui permet à différents logiciels de communiquer entre eux et d’échanger des données de manière standardisée</p>
+        </div>
+      </section>
+
+      <section data-background-image="media/api.svg" data-background-size="1800px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">API
+          </br><small>pour le livre et les corpus</small></p>
+
+<ul>
+<li>description fine des données</li>
+<li>accès à l'information structurée et personnalisable</li>
+<li>intégration avec d'autres systèmes</li>
+</ul>
+
+        </div>
+      </section>
+
+      <section data-background-image="media/anthologie-api.png" data-background-size="1800px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">API
+          </br><a href="https://anthologiagraeca.org/api/"><small>pour l'anthologie grecque</small></a></p>
+
+<ul>
+<li>principe du fragment au centre de la structure des données</li>
+<small>permet d'associer plusieurs fragments à une épigramme</small>
+</br><small>pluralité des vérités du texte</small>
+<li>jeux de visualisation avec les données</li>
+<small>index thématiques ou cartes</small>
+<li>collaboration avec d'autres environnements</li>
+<small>Perseus : récupération de l'URN</small>
+</br><small>Bibliothèque d'Heidelberg : repère du manuscrit</small>
+</br><small>Wikidata : URN des mots-clefs</small>
+</ul>
+
+        </div>
+      </section>
+
+      <section data-background-image="media/anthologie-heidelberg.png" data-background-size="1800px" background-color="#21211c">
+        
+      </section>
+
+      <section data-background-image="media/.png" data-background-size="1800px" background-color="#21211c">
+        <div id="fondop2">
+       <p style="font-variant: small-caps;">Web des données</p>
+<p>« Une Donnée Ouverte est une Donnée Liée qui est publiée sous une licence ouverte, ce qui n'entrave pas sa réutilisation gratuitement. » (Tim Berners-Lee)</p>
+
+        </div>
+      </section>
+
+      <section data-background-image="media/wikidata.png" data-background-size="1200px" background-color="#21211c">
+        <div id="fondop2">
+       <p style="font-variant: small-caps;"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></p>
+<ul>
+  <li>Base de données ouvertes liées</li>
+  <small>lancée par la Wikimédia Foundation en 2012</small>
+<li>Identifiants + relations en multilingue</li>
+</ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/anthologie-ville.png" data-background-size="1800px" background-color="#21211c">
+        <div id="fondop2">
+       <p style="font-variant: small-caps;">Exemple : <a href="https://anthologiagraeca.org/cities/">Cartographie de l'Anthologie grecque</a></p>
+
+        </div>
+      </section>
+
+      <section data-background-image="media/.png" data-background-size="1800px" background-color="#21211c">
+        <div id="fondop2">
+       <p style="font-variant: small-caps;">Web sémantique</p>
+<p>approche du Web pour encourager les ontologies et schémas sémantiques</p>
+        </div>
+      </section>
+
+      <section data-background-image="media/orlando.png" data-background-size="1800px">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Étude de cas : <a href="https://www.artsrn.ualberta.ca/orlando/">The Orlando Project</a></p>
+          <ul>
+            <li>Projet de recherche numérique</li>
+            <small>S. Brown, 1990</small>
+            <li>Ressource dédiée à l'histoire littéraire de femmes</li>
+            <small>en anglais</small>
+            <li>1 base de données : <a href="http://orlando.cambridge.org/"><i>Orlando: Women’s Writing in the British Isles from the Beginnings to the Present</i></a></li>
+            <small>modèle anthologique et encyclopédique</small>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/GRELQ.png" data-background-size="1300px">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Étude de cas : <a href="https://applis.flsh.usherbrooke.ca/GRELQ/site/categorie/mlq">Base de données des gens du livre</a>, GRÉLQ</p>
+        
+        </div>
+      </section>
+
+      <section data-background-image="media/lincs.png" data-background-size="1500px">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Étude de cas : <a href="https://lincsproject.ca/docs/tools/">LINCS Portal</a></p>
+        <p><i>Linked Infrastructure for Networked Cultural Scholarship</i></p>
+        </div>
+      </section>
+
+      <section data-background-image="media/lincs2.png" data-background-size="1500px">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Étude de cas : <a href="https://lincsproject.ca/docs/tools/context-explorer">LINCS Content Explorer</a></p>
+       
+          <p>outil dans le navigateur (Chrome) pour contextualisation sémantique</p>
+       
+        </div>
+      </section>
+
+    </section>
+    <!--
+      <section data-background-image="media/chute.png" data-background-size="1300px">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Pour la semaine prochaine</p>
+          <p><a href="">Création d'un compte Leaf</a>
+          </p>
+
+        </div>
+      </section>
+      -->
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Pérénité et bonnes pratiques éditoriales</h3>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/conservation.png" data-background-size="1600px">
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Anticiper l'archivage dès la création</p>
+         <small>l'archivage dépend des outils utilisés</small>
+         
+          </div>
+
+        </section>
+
+
+        <section data-background-image="media/conservastion.png" data-background-size="1500px">
+
+        </section>
+
+
+
+        <section data-background-image="media/wayback.png" data-background-size="1600px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;"><a href="http://wayback.archive.org/">Wayback Machine</a>, Internet Archive</p>
+
+
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1600px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Enjeux de pérennité à garder en tête tout au long du processus d'édition</p>
+
+            <ul>
+              <li>Structurer l'information</li>
+              <small>une information sémantisée et partagée à plus de chance de survie</small>
+<li>Veille sur le développpements des outils</li>
+<small>pour l'accessibilité, les caractéristiques des formats</small>
+              <li>Anticiper la passation</li>
+              <small>éviter les dettes techniques</small>
+            </br><small>documentation de la structure éditoriale mise en place</small>
+            
+          
+          </ul>
+
+          </div>
+        </section>
+
+
+
+    </section>
+
+      <section data-background-image="media/chute.png" data-background-size="1600px" data-background-color="#f1eded">
+        <div id="fondop2">
+          <p>Annotation pour la semaine prochaine : <a href="https://via.hypothes.is/https://www.cairn.info/revue-de-la-bibliotheque-nationale-de-france-2012-3-page-13.htm">Du récit hypertextuel au récit interactif (Bouchardon 2012)</a></p>
+        </div>
+    
+    
+      </section>
+
+
+  </div>
+
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+      // Optional reveal.js plugins
+      dependencies: [{
+          src: 'lib/js/classList.js',
+          condition: function () {
+            return !document.body.classList;
+          }
+        },
+        {
+          src: 'plugin/markdown/marked.js',
+          condition: function () {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: 'plugin/markdown/markdown.js',
+          condition: function () {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: 'plugin/highlight/highlight.js',
+          async: true,
+          condition: function () {
+            return !!document.querySelector('pre code');
+          },
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        },
+        {
+          src: 'plugin/zoom-js/zoom.js',
+          async: true
+        },
+        {
+          src: 'plugin/notes/notes.js',
+          async: true
+        }
+      ]
+    });
+
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+
+</body>
+</section>
+
+</html>
