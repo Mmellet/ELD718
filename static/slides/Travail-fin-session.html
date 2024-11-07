@@ -1,0 +1,568 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD718 - Édition numérique - A2024</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD718 - Automne 2024 - Margot Mellet</div>
+      <section data-background-image="media/chute.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD718 | Édition numérique</h2>
+          <h3>Travail de fin de session</h3>
+        </div>
+
+
+
+      </section>
+
+ 
+      <section data-background-color="#fff" data-background-image="media/chute.png" data-background-size="1600px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <h6>Travail final : Conceptualisation d'un projet de livre numérique</h6>
+        <ul>
+          <li><i class="material-icons">menu_book</i>  Modélisation théorique d'un livre numérique</li>
+          <li><i class="material-icons">groups</i> Présentation orale du modèle par groupe : 15 %</br><small>­­~ 15 min/groupe</small></li>
+          <li><i class="material-icons">notes</i> Descriptif détaillé et édité du modèle : 20 %</li>
+          <li><i class="material-icons">person</i> Extrait édité par personne : 15 %</li>
+        </ul>
+
+        <p>Structure - Investissement - Organisation</p>
+
+        <p><b>Penser en équipe une réalisation livresque numérique</b></p>
+      </div>
+    </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h6>Descriptif du livre numérique</h6>
+            <small>Corpus ; Approche éditoriale ; Produit fini</small>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Présentation d'un corpus</p>
+            <ul>
+              <li>sujet</li>
+              <small>histoire, thématiques, adaptations, etc.</small>
+              <li>niveau de remédiation choisi</li>
+              <small>oeuvre(s) entière(s), des fragments pour une anthologie, etc.</small>
+            </br>
+              <small>corpus déjà sous format numérique</small>
+              <li>caractéristiques littéraires et culturelles</li>
+              <small>histoire éditoriale, contexte d'émergence, particularités, genre, etc.</small>
+              <li>articulation avec la culture numérique</li>
+              <small>imaginaires, résonnances, topoï</small>
+            </ul>
+           
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1800px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Approche éditoriale</p>
+
+            <ul>
+              <li>objectif(s) du projet d'édition</li>
+              <small>que cherche à révéler/valoriser le travail d'édition ?</small>
+              <li>problématique(s) éditoriale(s) du corpus</li>
+              <small>quels sont les défis ? les besoins ?</small>
+              <li>inscription dans la culture numérique</li>
+              <small>lien avec une ou plusieurs notions vues en cours </br>+ une théorie de l'édition numérique</small>
+            <li>chaîne/fabrique/système éditorial</li>
+            <small>description des procédés de production</br> format(s) impliqué(s) et déterminations techniques</small>
+            
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1800px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Produit fini</p>
+
+
+            <ul>
+              <li>description du produit attendu</li>
+              <small>format(s) de sortie, manipulabilité, accessibilité</small>
+
+              <li>profil du livre numérique</li>
+              <small>lien avec la culture du livre (codex)</small>
+            </br><small>remédiation du livre (médiatique, sémiotique, symbolique)</small>
+
+              <li>public(s) cible(s)</li>
+              <small>voie de publication envisagée</small>
+          </br>
+              <small>modes de lecture, appropriation, interaction prévus</small>
+              <li>mode de publication</li>
+              <small>format(s) de sortie </br> hybridité ou non </br> design réactif/<i>responsive</i>/adaptatif ou non</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/chute.png" data-background-size="1800px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exemple 1 : Livre hypermédiatique de <i>1984</i> d'Orwell avec Github</p>
+<ul>
+  <li>Corpus : <i>1984</i> et le monde aujourd'hui</li>
+  <small>dystopie et roman d'anticipation d'une société de contrôle</small>
+</br>
+  <small>remédiation entière</small>
+</br>
+<small>intemporalité et importance culturelle et politique</small>
+</br><small>résonnance avec la société de surveillance, articulation à l'actualité politique</small>
+
+<li>Approche éditoriale : raviver un récit critique des pouvoirs politiques</li>
+<small>réactualiser le récit avec les évènements modernes</small>
+<small>// profil de données, déterminations politiques des formats, théorie de l'éditorialisation</small>
+<small>fabrique : repo Github + CMS (réutilisation template)</small>
+<small>format de travail : markdown</small>
+
+<li>Produit fini : un livre hypermédiatique</li>
+<small>articulation entre le texte et des médias</small>
+</br><small>hyperliens et utilisation des données liées</small>
+</br><small>livre enrichi comme architecture d'informations</small>
+</br><small>design réactif pour tablette, sortie PDF et HTML</small>
+
+</ul>
+          </div>
+        </section>
+      
+
+
+        <section data-background-image="media/chute.png" data-background-size="1800px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exemple 2 : Livre anthologie des contraintes oulipiennes</p>
+<ul>
+  <li>Corpus : contraintes d'Oulipo listée via le site officiel</li>
+  <small>sélection des contraintes avec exemples : but de reproduction</small>
+</br>
+  <small>avant-garde de la littérature, philosophie de la contrainte</small>
+</br>
+  <small>précurseur d'une culture numérique, jeu avec l'automatisme littéraire</small>
+
+  <li>Approche éditoriale : documenter une créativité avant-gardiste</li>
+  <small>défi d'une remédiation harmonieuse</small>
+</br>
+  <small>// littérature numérique, programmation, théorie de la fabrique</small>
+</br>
+  <small>production avec un PAO, modèle de mise en page</small>
+
+
+<li>Produit fini : un EPUB</li>
+<small>Ebook anthologique avec design accessible FROG</small>
+</br>
+<small>remédiation homothétique</small>
+</br>
+<small>ouverture à de multiples publics</small>
+
+</ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1800px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Document final</p>
+ <ul>
+              <li>3 catégories</li>
+              <small>Ø distibution, diffusion, commercialisation</small>
+              <li>Liberté de réorganiser les sous-sections</li>
+              <small>d'en ajouter selon les cas</small>
+              <li>25 000 caractères</li>
+              <small>10 pages</small>
+               </ul>
+             </div>
+        </section>
+
+
+        <section data-background-image="media/chute.png" data-background-size="1800px">
+          <div id="fondop2">
+            <h6>Dépôt - 20 décembre</h6>
+            <ul>
+              <li>Format de sortie : PDF</li>
+              <small>dépôt sur Moodle</small>
+
+            </ul>
+          </br>
+        </br>
+            <small>Nomenclature : GroupeNumero_ELD718_fin-session</small>
+          </div>
+        </section>
+
+
+      </section>
+
+
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Présentation orale - 28 novembre</h3>
+            <p style="font-variant: small-caps;">Présentation des trois axes du descriptif = 15 min/groupe</p>
+         <small>corpus, approche éditoriale, produit fini</small>
+          </br><small>possibilité d'avoir un support visuel</small>
+      
+      <p>suivi d'un temps de questions-réponses</p>
+      <small>participation notée</small>
+        </div>
+        </section>
+
+      </section>
+
+
+
+ <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h6>Extrait édité par personne dans chaque groupe</h6>
+          <small>à venir</small>       
+          </div>
+        </section>
+
+        
+        
+      </section>
+
+    
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

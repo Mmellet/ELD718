@@ -26,7 +26,12 @@ title: Modalités d'évaluation
 - [Pandoc](https://mmellet.github.io/ELD718/doc/pandoc.pdf)
 
 ### Travail final 
-*présentation lors de la séance 9*
+
+<iframe src="https://mmellet.github.io/ELD718/slides/Travail-fin-session.html" title="description"  height="500" width="800" allowfullscreen="allowfullscreen"></iframe>
+
+<div style="text-align:center">
+<a href="https://mmellet.github.io/ELD718/slides/Travail-fin-session.html" target="_blank">ouvrir dans mon navigateur</a>
+</div>
 
 
 

@@ -1,0 +1,1265 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD718 - Édition numérique - A2024</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    .batman {
+      background-color: #d7d9f2;
+    }
+
+    .flash {
+      background-color: #9de2c8dc;
+    }
+
+    .pouf {
+      background-color: #e29dcbdc;
+    }
+
+    table {
+      border: 2px solid rgb(140 140 140);
+      font-family: sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+    }
+
+
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+  </style>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD718 - Automne 2024 - Margot Mellet</div>
+      <section data-background-image="media/edition.png" data-background-size="2200px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD718 | Édition numérique
+
+
+          </h2>
+          <h3>7 novembre : Designs de la lecture et nouvelles matérialités littéraires : ­­enrichissement, hybridation,
+            hypertexte</h3>
+        </div>
+
+
+
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Littérature électronique, des générations de littérature générative</h3>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/edition.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">
+              Littérature électronique
+              <small></br>littérature qui s'étend des années 1950 aux années 1990 et qui s'axe sur une perspective
+                générative littéraire</small>
+              </br><small>expérimentale, en rupture, radicale</small>
+
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/edition.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">
+              Littératures combinatoires
+              </br> <small></br>automatiser la production des textes littéraires</small>
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/oulipo.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">OULIPO
+              </br>
+              <small>Ouvroir de Littérature Potentielle</small></p>
+            <ul>
+              <li>groupe littéraire, 1960 par François Le Lionnais et Raymond Queneau</li>
+              <small>réunion Littératures et Mathématiques</small>
+              </br><small>méthode créative de la <a href="https://www.oulipo.net/fr/contraintes">contrainte</a></small>
+              </br><small>extension informatique : ALAMO par Braffort et Roubaud (1981-2020)</small>
+
+            </ul>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/CMMP.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Exemple : <i>Cent mille milliards de poèmes</i>
+              </br>
+              <small>Queneau 1961</small></p>
+            <ul>
+              <li>Livre animé de poésie combinatoire</li>
+              <small>Éditions Gallimard, Robert Massin</small>
+              </br><small>10 feuilles, 14 bandes horizontales/feuille, 1 vers/bande</small>
+            </ul>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/" data-background-size="1600px">
+          <div id="fondop2">
+
+            <p>
+              « Ce petit ouvrage permet à tout un chacun de composer à volonté cent mille milliards de sonnets, tous
+              réguliers bien entendu. C’est somme toute une sorte de machine à fabriquer des poèmes, mais en nombre
+              limité ; il est vrai que ce nombre, quoique limité, fournit de la lecture pour près de deux cents millions
+              d’années (en lisant vingt-quatre heures sur vingt-quatre). »
+              <small></br>(Queneau, 1985)</small>
+            </p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1600px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Combinatoire et Illisibilité</p>
+
+            <p>
+              « En comptant 45 s pour lire un sonnet et 15 s pour changer les volets </br>à 8 heures par jour, 200 jours
+              par an, on a pour plus d’un million de siècles de lecture, et en lisant toute la journée 365 jours par an,
+              pour 190 258 751 années plus quelques plombes et broquilles </br>(sans tenir compte des années bissextiles
+              et autres détails). »
+              </br><small></br>(Queneau, 1985)</small>
+            </p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/turing.jpg" data-background-size="1600px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Générateurs de texte</p>
+
+            <p style="font-size: 32px;">
+              « Seule une machine peut apprécier un sonnet "écrit" par une autre machine. »
+              <small>(Turing)</small>
+            </p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/poem.jpeg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Machine de Stratchey
+              </br><small>1952</small> </p>
+            <ul>
+              <li>Premier générateur de lettre d'amour</li>
+              <small>début de la littérature électronique</small>
+              </br><small>début de la littérature électronique queer</small>
+              <li>Fonctionnement : 1 structure de lettre, 1 structure de phrase, 1 lexique</li>
+              <li><a href="https://nickm.com/memslam/love_letters.html">Recomposition 2014</a>, Nick Monfort</li>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/baudot.jpeg" data-background-size="900px" background-color="#21211c">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Machine de Baudot
+              </br><small>1964</small>
+            </p>
+            <ul>
+              <li><a href="https://archive.org/details/xfoml0001"><i>La Machine à écrire mise en marche et programmée
+                    par Jean A. Baudot</i></a></li>
+              <small>conception et documentation d'un générateur de texte littéraire</small>
+              </br><small>commentaires de littéraires, linguistes, mathématiciens, informaticiens, poètes</small>
+              <li>Fonctionnement : dictionnaire de mots, algorithme combinatoire, règles syntaxiques</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Modèle 1
+              </br><small><i>Manuel de français de quatrième année</i></small>
+
+
+            </p>
+
+            <ul style="font-size: 28px;">
+              <li>L'automne et le champs transportent quelquefois une couronne</li>
+              <li>Les campagnes trahissent l'effort</li>
+              <li>Les crocodiles rapides oublieront les courses vives comme une peine pittoresque</li>
+  
+              <li>Le robinet travaille</li>
+              <li>Les couronnes et la pluie se regardent dans la chouette</li>
+              <li>L'histoire sauve la compote derrière le vent</li>
+  
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Modèle 2
+              </br><small><i>extraits de Victor Hugo</i></small>
+            </p>
+
+            <ul style="font-size: 28px;">
+            <li>Les lueurs aristocratiques et les ailes souveraines profanent la justice même</li>
+						<li>Les espaces augustes entrent en pleine nuit, car les brousailles funèbres dominent les
+							brumes</li>
+						<li>Des bronzes tordus et des tremblements ne se sauveront plus</li>
+
+
+</ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/edition.png" data-background-size="1900px" background-color="#21211c">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Approches génératives
+            </p>
+            <ol>
+              <li>Générateur de texte</li>
+              <small>programme qui créé du texte à partir d’un ensemble de règles qui constituent une grammaire </br>et
+                d’un ensemble d’éléments préconstruits qui forment un dictionnaire.</small>
+              <li>Générateur combinatoire</li>
+              <small>générateur de texte qui combine selon des règles algorithmiques spécifiques </br> des fragments de
+                textes préconstruits. </small>
+            </ol>
+          </div>
+        </section>
+
+        <section data-background-image="media/sintext.png" data-background-size="1800px" background-color="#21211c">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Générateurs modernes
+              </br><small></small>
+            </p>
+            <ul>
+              <li><i>Mémoire d'un (mauvais) coucheur</i>, Bernard Magné, 1995</li>
+              <small>
+                générateur combinatoire de maximes avec système de phrases à trous
+              </small>
+
+              <li><i>Sintext</i> de Pedro Barbosa avec Abilio Cavalheiro, 1993</li>
+              <small><i>SINtetizador de TEXTos</i></small>
+              </br><small>application en Java pour générer des générateurs</small>
+
+              <li><i>Contre-Haïkus</i>, Jean-Pierre Balpe, 2015</li>
+              <small>générateur de poésie</small>
+
+              <li><i>50 Nuances de générateur</i>, Philippe Castelneau, 2017</li>
+              <small>génération à partir de <i>50 nuances de Grey</i></small>
+
+
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/edition.png" data-background-size="1900px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Modèlisation littéraire</p>
+
+            <p>
+              « Ce qui m’intéresse dans la génération, ce n’est pas le texte qui s’affiche. Ce texte-là est un moment
+              comme un autre, on s’en fout. […] Ce qui m’intéresse, c’est cette capacité à produire à l’infini et à
+              générer un univers que je ne suis pas capable de faire. C’est donc un autre substitut qui transmet une
+              pensée qui dit. Peut-être est-ce un fantasme d’éternité. [...] Écrire n’est plus produire un texte donné,
+              mais établir des modèles abstraits de texte. L’originalité ne réside plus dans le produit, mais dans les
+              modalités de production. »
+              </br><small></br>(Balpe, 1991)</small>
+            </p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1600px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Implications théoriques </p>
+
+            <ol>
+              <li>
+                Déplacement du sens de la littérature
+              </li>
+              <small>
+
+              </small>
+
+              <li>
+                Déplacement du statut d'auteur 
+              </li>
+
+              <li>
+                Déplacement de la fonction du lecteur
+              </li>
+            </ol>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/edition.png" data-background-size="1900px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Vers la littérature numérique</p>
+
+            <ul>
+              <li>
+Culture de l'écran, Culture du Web
+              </li>
+              <small>
+littératures hypermédiatiques, littératures hybrides
+              </small>
+
+            </br>
+              <small>
+                <a href="https://balises.bpi.fr/lhistoire-de-la-litterature-numerique/">chronologie</a>
+              </small>
+
+              <li>
+                Études littéraires du statut de la littérature dans la culture numérique
+              </li>
+
+              <small>définition Bootz : hybridation des valeurs et médias littéraires</small>
+            </br>
+            <small>définition Hayles : jeu avec la tradition littéraire</small>
+
+          </br>
+          <small>définition Bouchardon : herméneutique particulière</small>
+            </ul>
+
+          </div>
+        </section>
+
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Littératures hypertextuelles</h3>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/nelson.jpeg" data-background-size="1600px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Hypertexte
+            </br><small>plus loin, au-delà, dehors</small></p>
+
+         
+          </div>
+        </section>
+
+
+        <section data-background-image="media/" data-background-size="1600px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Hypertexte littéraire</p>
+
+            <p>
+              texte littéraire dérivé par rapport à un autre qui lui est antérieur et lui sert de modèle ou de source, d'où des phénomènes de réécriture possibles comme le pastiche ou la parodie.
+            </br> <small>(Genette, 1992)</small>
+            </p>
+            </ul>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/memex.png" data-background-size="1200px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Hypertexte numérique 
+            </br><small>précurseur</small>
+            </p>
+
+            <ul>
+              <li>
+Le Memex, Bush, 1945
+              </li>
+              <small>
+<i>Memory Extender</i>, « As We May Think »
+              </small>
+              </br><small>bureau électromécanique</small>
+
+          
+            </ul>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/nelson.jpg" data-background-size="1400px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Hypertexte numérique 
+            </br><small>institutionnalisation</small>
+            </p>
+
+     <p>« Let me introduce the word 'hypertext' to mean a body of written or pictorial material interconnected in such a complex way that it could not conveniently be presented or represented on paper. » (Nelson)</p>
+          </br><small>projet Xanadu : hypertexte global pour une littérature mondiale</small>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/edition.png" data-background-size="1900px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Littérature hypertextuelle</p>
+          </br><small>structure éditoriale et poétique sur le principe d'hypertexte</small>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/afternoon.png" data-background-size="1200px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;"><i>afternoon: a story</i>
+            </br><small>Joyce, 1987</small>
+            </p>
+
+            <ul>
+              <li>
+Une journée dans la vie d'un homme qui tente de retrouver sa mémoire
+              </li>
+              <small>
+
+              </small>
+
+              <li>
+                Création avec StorySpace
+              </li>
+<small>1980, logiciel pour la rédaction d'hypertexte de fiction</small>
+
+<li>Fonctionnement par déplacement d'un noeud à un autre</li>
+<small>539 noeuds, 950 liens</small>
+
+            </ul>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/patchwork.jpeg" data-background-size="1600px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;"><i>Patchwork Girl</i>
+            </br><small>Jackson, 1995</small>
+            <ul>
+              <li>
+Suite de Frankenstein
+              </li>
+              <small>
+recomposition de la fiancée du monstre par Mary Shelley
+              </small>
+
+            </br>
+            <small>1 noeud = 1 partie du corps (du monstre et du texte)</small>
+
+              <li>
+                Création avec StorySpace
+              </li>
+
+              <li>
+                Publication par Eastgate Systems
+              </li>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/skin2.jpeg" data-background-size="500px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;"><i><a href="https://ineradicablestain.com/skindex.html">SKIN: A Story Published on the Skin of 2095 Volunteers</a></i>
+
+          </br><small>Jackson, 2003</small>
+          </p>
+
+<p style="font-size: 26px;">« L’écrivaine Shelley Jackson invite les participants à participer à une nouvelle œuvre intitulée "Skin". Chaque participant doit accepter de se faire tatouer sur le corps un mot de ce récit. Le texte ne sera publié nulle part ailleurs et l’auteur ne permettra pas qu’il soit résumé, cité, décrit, mis en musique ou adapté pour le cinéma, le théâtre, la télévision ou tout autre support. Le texte intégral ne sera connu que des participants, qui peuvent, mais ne sont pas tenus, d’établir une communication entre eux. [...] À partir de ce moment, les participants seront connus sous le nom de "mots". Ils ne sont pas considérés comme des porteurs ou des agents des textes qu'ils portent, mais comme ses incarnations. Par conséquent, les blessures aux textes imprimés, telles que la dermabrasion, la chirurgie au laser, le travail de tatouage ou la perte de parties du corps, ne seront pas considérées comme altérant le travail. Seule la mort des mots les efface du texte. À mesure que les mots meurent, l'histoire change ; lorsque le dernier mot meurt, l'histoire est également morte. L'auteur fera tout son possible pour assister aux funérailles de ses mots. »</p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/desordre.jpg" data-background-size="1200px"
+				data-background-color="#fff">
+				<div id="fondop2">
+					<p style="font-variant: small-caps;"><a href="https://desordre.net"><i>desordre.net</i></a> 
+          </br><small>de Jonckheere, 2001</small></p>
+					<ul>
+						<li>Constante réédition</li>
+						<li>Structure mouvante</li>
+						<li>Articulation entre combinatoire et hypertexte</li>
+					</ul>
+						</div>
+			</section>
+
+        <section data-background-image="media/perec.png" data-background-size="800px"
+				data-background-color="#fff">
+				<div id="fondop2">
+          <p style="font-variant: small-caps;"><a href="https://desordre.net/textes/bibliotheque/auteurs/perec/saint-sulpice.html"><i>Tentative d'épuisement de Tentative d'épuisement d'un lieu parisien de Georges Perec</i></a>
+          
+          </p>
+					<p>Version hypermédiatique de <i>Tentative d'épuisement d'un lieu parisien</i> (Perec 1974)</p>
+				
+						</div>
+			</section>
+
+      <section data-background-image="media/edition.png" data-background-size="1900px">
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">Transmédialité : déploiement d'une oeuvre dans plusieurs réseaux et formes médiatiques.</p>
+
+        </div>
+      </section>
+
+      <section data-background-image="media/edition.png" data-background-size="1900px">
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">Intermédialité : articulation de plusieurs formes médiatiques dans une même création.</p>
+
+        </br><small>exemple : <i><a href="https://annesavelli.fr/">Fenêtre Open Space</a></i>, Savelli</small>
+        </div>
+      </section>
+
+
+      </section>
+
+
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Les Interactivités littéraires</h3>
+
+          </div>
+        </section>
+
+
+      <section data-background-image="media/.jpg" data-background-size="1600px">
+        <div id="fondop2">
+
+          <p>« l'interactivité repose sur une programmation informatique prévoyant les interventions matérielles du lecteur » (Bouchardon)</p>
+        </br><small>exemple prénumérique : <i>Composition no1</i> de Saporta, <i>Si par une nuit d'hiver un voyageur</i> de Calvino</small>
+        </div>
+      </section>
+
+      <section data-background-image="media/.jpg" data-background-size="1600px">
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">Types d'interactivité</p>
+
+          <ul>
+            <li>
+Récits hypertextuels
+            </li>
+            <small>
+arborescence en boucle
+            </small>
+
+            <li>
+              Récits cinétiques
+            </li>
+<small>mouvement et jeu</small>
+
+<li>Récits génératifs</li>
+<small>écriture automatique</small>
+
+<li>Récits collectifs</li>
+<small>communauté d'écriture</small>
+          </ul>
+
+        </div>
+      </section>
+
+      <section data-background="media/deprise.png" data-background-size="1600px">
+				<div id="fondop2">
+					<p style="font-variant: small-caps;"><a href="https://bouchard.pers.utc.fr/deprise/home"><i>Déprise</i></a> de Bouchardon et Volckaert</p>
+
+					<ul>
+						<li>Déclinaison de mécanismes interactifs</li>
+						<li>New Media Writing Prize 2011.</li>
+					</ul>
+
+				</div>
+			</section>
+
+      <section data-background-image="media/.jpg" data-background-size="1600px">
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">Interactivités sociales</p>
+
+          <ul>
+            <li>
+Récits sur les réseaux sociaux 
+            </li>
+            <small>
+intrication réel et fiction
+            </small>
+
+            <li>
+              Récits géolocalisés en temps réel
+            </li>
+<small>espace et déplacement</small>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section data-background-image="media/edition.png" data-background-size="1900px">
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">Défis éditoriaux</p>
+
+          <ul>
+            <li>
+Conciliation narrativité et interactivité
+            </li>
+            <small>
+
+            </small>
+
+            <li>
+              Accompagner la lecture en la laissant libre
+            </li>
+
+            <li>Réinventer la lecture</li>
+            <small>usure de la lecture après la 1<sup>ère</sup> expérience</small>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section data-background-image="media/" data-background-size="1600px">
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">Maux d'archives</p>
+
+ <p style="font-size: 27px;">« 9 avril 2003: Un jugement à l'emporte-pièce de free.fr qui confond l'expansion de mon site avec celle des sites de l'Entretenir et de Barbara Crane les conduit à supprimer de leur serveur tous les fichiers du site. Je bricole en toute hâte une page index pour rassurer tout le monde, le désordre existera bientôt ailleurs: www.desordre.net, jeu de mots troué aux mites, mais même dans l'adversité, on ne se refait pas.
+
+</br>
+</br>12 avril 2003: Tout rentre dans l'ordre, si vous me passez l'expression, le site est désormais hébergé professionnellement par online.fr (c'est tout moi, qui radicalement voulais absolument partir de free.fr, réflexe vengeur, et qui donc s'inscrit pour un hébergement payant et quand la note est réglée de m'apercevoir que online.fr et free.fr, c'est bonnet blanc et blanc bonnet). » 
+ </br><small>de Jonckheere</small></p>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/" data-background-size="1600px">
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">Soutiens à l'archivage</p>
+
+
+      <ul>
+
+        <li><a href="https://elmcip.net/">ELMCIP</a></li>
+        <li><a href="https://repertoire.ecrituresnumeriques.ca/s/repertoire/page/accueil">Le Répertoire des écritures numériques</a></li>
+      <li><a href="https://nt2.uqam.ca/">Le Répertoire du NT2</a></li>
+      
+        <li><a href="https://www.ubu.com/">UbuWeb</a></li>
+      </ul>
+
+    </div>
+  </section>
+
+  <section data-background-image="media/publie.png" data-background-size="1600px">
+    <div id="fondop2">
+
+      <p style="font-variant: small-caps;">Communauté éditoriales littéraires
+    </br><small><a href="https://www.publie.net/">Publie.net</a>, 2008</small></p>
+
+      <ul>
+        <li>
+Coopérative d'écrivains francophones
+        </li>
+        <small>
+
+        </small>
+
+        <li>
+          Portail de mise en vente
+        </li>
+<small>littérature contemporaine, ateliers, blogs, etc.</small>
+      </br><small>50% à l'auteur</small>
+
+      <li>
+        Communauté littéraire
+                </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+  <section data-background-image="media/manifold.png" data-background-size="500px">
+    <div id="fondop2">
+
+      <p style="font-variant: small-caps;">Communauté éditoriales littéraires
+    </br><small><a href="https://www.publie.net/">Manifold</a>, 2012</small></p>
+
+      <ul>
+        <li>
+Plateforme de publication numérique
+        </li>
+        <small>
+pour le partage en accès libre de contenus académiques et littéraires
+        </small>
+      </br><small>création Epub</small>
+
+        <li>
+          Portail convivial
+        </li>
+<small>fonctionnalités interactives (commentaires, annotations)</small>
+      </br><small>personnalisation, collaboration</small>
+
+      <li>
+        <a href="https://cuny.manifoldapp.org/">Instance CUNY</a>, pour les projets d'édition
+       
+                </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+
+      </section>
+
+
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3><i class="material-icons">groups</i> Discussion<h3>
+              <small><a href="https://via.hypothes.is/https://www.cairn.info/revue-de-la-bibliotheque-nationale-de-france-2012-3-page-13.htm">Du récit hypertextuel au récit interactif (Bouchardon 2012)</a></small>
+      
+          </div>
+        </section>
+
+
+
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Figures du livre numérique</h3>
+          </div>
+        </section>
+
+        <section data-background-image="media/edition.png" data-background-size="1900px">
+          <div id="fondop2">
+  
+            <p>« La fin de l’écriture linéaire est bel et bien la fin du livre. » (Derrida)</p>
+           </div>
+        </section>
+
+        <section data-background-image="media/edition.png" data-background-size="1900px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;"><i>Imaginaire de la fin du livre : figures du livre et pratiques illittéraires</i> </br>(Gervais, 2016)</p>
+<small>hybridations du livre qui participent à faire passer le livre d'une culture du papier à une culture de l'écran</small>
+          </br><small>ou qui reprennent une esthétique de l'écran sur le papier</small>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/bible2.jpg" data-background-size="1500px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Frontières multimédiales</p>
+
+            <ul>
+              <li>
+Livre phagocyté
+              </li>
+              <small>
+<i>Holy Bible</i>, Broomberg et Chanarin (2013)
+              </small>
+            </br><small>thèse de la violence intemporelle d'Adi Ophir</small>
+
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/humument1.png" data-background-size="1600px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Frontières multimédiales</p>
+
+            <ul>
+              <li>
+Livre d'artiste
+              </li>
+              <small>
+<a href="http://www.tomphillips.co.uk/humument"><i>A Humument, A Treated Victorian Novel</i></a>, Tom Phillips (1970)
+              </small>
+            </br><small>recouvrement de <i>A Human Document</i> (Mallock)</small>
+
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/house.jpg" data-background-size="1400px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Livre et défilement
+            </br>
+          <small>graphisme d'une culture numérique</small>
+          </p>
+          
+
+            <ul>
+              <li>
+<i>Nox</i>, Anne Carson (2010, New Directions)
+              </li>
+              <small>
+livre relié-accordéon, 20 mètres
+              </small>
+            </br><small>numérisation d'un carnet personnel, jeu de remédiation par transparence de la page</small>
+
+<li><i>House of Leaves</i>, Marz Z. Danielewski (2000, Pantheon Books)</li>
+<small>jeu typographie avec navigation hypertextuelle</small>
+          </br><small>décodage d'une histoire délinéarisée et multimédiales</small>
+          
+
+            <li><i>VAS: An Opera in Flatland</i>, Steve Tomasula (2004, UCP)</li>
+            <small>design par Steven Farrell</small>
+          </br><small>récit satirique où les formes géométriques organise la narration</small>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/application.jpg" data-background-size="1400px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Livre-application
+            </br>
+          <small><a href="https://www.obxlabs.net/experiments/speak/"><i>What they speak when they speak to me</i></a> de Jason Edward Lewis et Bruno Nadeau</small>
+          </p>
+          
+
+            <ul>
+              <li>
+Poème-calligrammes
+              </li>
+              <small>
+remédiation livre pour Ipad
+              </small>
+
+              <li>Dispositif interactif</li>
+
+
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/abrupt.jpg" data-background-size="1600px">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">GitLittérature
+            </br>
+          <small><a href="https://abrupt.cc/"><i>Abrüpt</i></a></small>
+          </p>
+          
+
+            <ul>
+<li>Éditions multiples avec repo git</li>
+<small>HTML, PDF</small>
+            </br><small><a href="https://abrupt.cc/frederic-neyrat/cosmos-experimental/"><i>Cosmos expérimental</i></a></small>
+          </br><small><a href="https://abrupt.cc/marcel-deburas/la-fin-des-temps-ne-vient-pas/"><i>La fin des temps ne vient pas</i></a></small>
+        </br><small><a href="https://abrupt.cc/c-jeanney/la-langue-de-la-girafe/"><i>La langue de la girafe</i></a></small>  
+          
+          <li><a href="https://www.antilivre.org/#manifeste">Antilivres</a></li>
+              <small>Index des créations disponibles</small>
+
+              
+            </ul>
+
+          </div>
+        </section>
+
+  
+
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="1600px" data-background-color="#f1eded">
+        <div id="fondop2">
+          <p>Annotation pour la semaine prochaine : <a href="https://www.erudit.org/fr/revues/memoires/2021-v12-n2-memoires06997/1089037ar/">De la travailleuse de l’ombre à la femme d’exception : réflexion sur la présence des femmes dans l’histoire du livre au Québec (Vincent 2022)</a></p>
+        </div>
+
+
+      </section>
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+</section>
+
+</html>
